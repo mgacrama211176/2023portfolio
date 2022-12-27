@@ -14,9 +14,14 @@ const BackgroundCircles = (props: Props) => {
       }}
       transition={{ duration: 4 }}
     >
+      <div className="absolute border rounded-full border-[#00255e] h-[150px] w-[150px] mt-52 animate-ping" />
+
       <div className="absolute border border-[#00255e] h-[500px] w-[500px] mt-52 animate-clockRotate" />
 
       <div className="border border-[#00255e] h-[500px] w-[500px] absolute mt-52 animate-counterRotate" />
+
+      <div className="border border-[#00255e] h-[500px] w-[500px] absolute mt-52 animate-thirdElementRotation" />
+      <div className="border border-[#00255e] h-[500px] w-[500px] absolute mt-52 animate-forthElementRotation" />
     </motion.div>
   );
 };

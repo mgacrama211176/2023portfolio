@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
+import { BsPerson } from "react-icons/bs";
 
 type Props = {};
 
@@ -47,22 +48,33 @@ const Header = (props: Props) => {
       </motion.div>
 
       {/* CONTACT ICON */}
-      <motion.button
-        className="flex flex-row items-center justify-center cursor-pointer bg-[#00255E] rounded-3xl"
+      <motion.div
         initial={{ y: 1000, opacity: 0, scale: 0.5 }}
         animate={{ y: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1.5 }}
+        className="flex flex-row gap-3"
       >
-        <SocialIcon
-          className="cursor-pointer"
-          network="email"
-          fgColor="white"
-          bgColor="transparent"
-        />
-        <p className="uppercase hidden md:inline-flex text-sm text-white pr-3 font-medium">
-          Contact ME!
-        </p>
-      </motion.button>
+        <button className="flex flex-row items-center justify-center cursor-pointer bg-[#00255E] rounded-3xl hover:bg-[#00a6ec] ease-in-out duration-500 ">
+          <SocialIcon
+            className="cursor-pointer"
+            network="email"
+            fgColor="white"
+            bgColor="transparent"
+          />
+          <p className="uppercase hidden md:inline-flex text-sm text-white pr-3 font-medium">
+            Contact ME!
+          </p>
+        </button>
+
+        <a href="/files/cv.pdf" target="_blank" download>
+          <button className="flex flex-row items-center justify-center cursor-pointer bg-[#00255E] rounded-3xl hover:bg-[#00a6ec] ease-in-out duration-500 p-4 gap-2">
+            <BsPerson className="text-white sm:w-6" />
+            <p className="uppercase hidden md:inline-flex text-sm text-white pr-3 font-medium">
+              Download CV
+            </p>
+          </button>
+        </a>
+      </motion.div>
     </header>
   );
 };
