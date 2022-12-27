@@ -9,10 +9,15 @@ const About = (props: Props) => {
     return `${src}?w=${width}&q=${quality || 100}`;
   };
   return (
-    <div className="h-screen flex flex-col relative text-center md:text-center md:flex-row max-w-8xl px-10 justify-evenly items-center">
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-2xl text-[#CB890D]">
+    <div className="h-screen flex flex-col relative text-center lg:text-center lg:flex-row max-w-8xl px-10 justify-evenly items-center">
+      <motion.h3
+        className="absolute lg:top-24 top-[285px] md:top-[400px] uppercase tracking-[20px] text-2xl text-[#CB890D] "
+        initial={{ x: -200, opacity: 0 }}
+        whileInView={{ x: 0, opacity: [1, 0.5, 1] }}
+      >
         About
-      </h3>
+      </motion.h3>
+
       <motion.div
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: [1, 0.5, 1] }}
@@ -23,7 +28,7 @@ const About = (props: Props) => {
           alt="Profile Image"
           width={320}
           height={320}
-          className="relative rounded-full w-42 mx-auto mb-0 md:mb-0 flex-shrink-0 object-cover md:w-64 md:h-95 xl:w-[400px] xl:h-[500px]"
+          className="relative rounded-full w-36 md:w-44 mx-auto mb-0 md:mb-0 flex-shrink-0 object-cover  lg:w-64 lg:h-95 xl:w-[400px] xl:h-[500px]"
         />
       </motion.div>
 
