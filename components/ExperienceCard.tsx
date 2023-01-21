@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import axios from 'axios';
 
 type Props = {};
 
@@ -9,7 +10,7 @@ const ExperienceCard = (props: Props) => {
     return `${src}?w=${width}&q=${quality || 100}`;
   };
   return (
-    <article className="flex flex-col items-center space-y-7 flex-shrink-0 w-[500px] md:w-[500px] snap-center bg-[#00255e] border rounded-xl text-[white] py-6">
+    <article className="flex flex-col items-center space-y-7 flex-shrink-0 w-[500px] md:w-[500px] snap-center bg-[#00255e] border rounded-xl text-[white] py-6 ">
       <motion.div
         initial={{ y: -100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -25,7 +26,7 @@ const ExperienceCard = (props: Props) => {
         />
       </motion.div>
 
-      <div className="px-0 md:px-10">
+      <div className="px-0 md:px-10 flex flex-col items-center">
         <h4 className="text-4xl font-light">Virtual Assistant</h4>
         <p className="font-bold text-2xl mt-1">Tasks Everyday</p>
         <div className="flex space-x-2 my-2">

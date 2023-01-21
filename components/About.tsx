@@ -14,6 +14,7 @@ const About = (props: Props) => {
         className="absolute top-[110px]  md:top-[100px] lg:top-24 uppercase tracking-[20px] text-3xl text-[#CB890D] "
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: [1, 0.5, 1] }}
+        viewport={{once:true}}
       >
         About
       </motion.h3>
@@ -21,6 +22,7 @@ const About = (props: Props) => {
       <motion.div
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: [1, 0.5, 1] }}
+        viewport={{once:true}}
       >
         <Image
           loader={myLoader}
