@@ -9,9 +9,9 @@ const About = (props: Props) => {
     return `${src}?w=${width}&q=${quality || 100}`;
   };
   return (
-    <div className="h-screen flex flex-col relative text-center lg:text-center lg:flex-row max-w-8xl px-10 justify-evenly items-center">
+    <div className="h-screen flex flex-col relative text-center lg:text-center lg:flex-row max-w-8xl pt-28 px-3 justify-evenly items-center ">
       <motion.h3
-        className="absolute lg:top-24 top-[285px] md:top-[400px] uppercase tracking-[20px] text-2xl text-[#CB890D] "
+        className="absolute top-[110px]  md:top-[100px] lg:top-24 uppercase tracking-[20px] text-3xl text-[#CB890D] "
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: [1, 0.5, 1] }}
       >
@@ -28,7 +28,7 @@ const About = (props: Props) => {
           alt="Profile Image"
           width={320}
           height={320}
-          className="relative rounded-full w-36 md:w-44 mx-auto mb-0 md:mb-0 flex-shrink-0 object-cover  lg:w-64 lg:h-95 xl:w-[400px] xl:h-[500px]"
+          className="relative rounded-full w-36 md:w-44 mx-auto mb-0 md:mb-0 flex-shrink-0 object-cover lg:w-64 lg:h-95 xl:w-[400px] xl:h-[500px]"
         />
       </motion.div>
 
@@ -37,10 +37,11 @@ const About = (props: Props) => {
         initial={{ x: 200, opacity: 0 }}
         whileInView={{ x: 0, opacity: [1, 0.5, 1] }}
       >
-        <h4 className="text-4xl font-semibold p-2 text-[#00255e]">
+        <h4 className="text-3xl font-semibold  text-[#00255e] pb-3">
           Marlon Gacrama Jr
         </h4>
-        <p className="text-base text-[#00255e]">
+        {/* <button className="rounded-full  border  p-2 text-[white] bg-[#CB890E]">Click me! </button> */}
+        <p className=" text-[#00255e] text-sm">
           Hi there! My name is Marlon and I am a dedicated and driven 4th year
           college student pursuing a career in web development. Currently, I am
           interning at Accenture, where I have the opportunity to apply my

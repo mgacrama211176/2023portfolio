@@ -1,7 +1,6 @@
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -37,7 +36,7 @@ const Hero = (props: Props) => {
         <h2 className="text-sm uppercase pb-2 tracking-[5px] text-1xl font-semibold">
           Full Stack Web Developer
         </h2>
-        <h1 className="text-3xl lg:text-4xl font-semibold px-10">
+        <h1 className="text-2xl lg:text-4xl font-semibold px-10">
           <span className="mr-3">{main}</span>
           <Cursor cursorColor="white" />
         </h1>

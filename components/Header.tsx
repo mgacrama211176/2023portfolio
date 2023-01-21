@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import { BsPerson } from "react-icons/bs";
@@ -6,15 +6,12 @@ import { BsPerson } from "react-icons/bs";
 type Props = {};
 
 const Header = (props: Props) => {
-  const [colorDefault, setColorDefault] = useState({
-    facebook: "transparent",
-  });
 
   return (
-    <header className="sticky top-0 flex flex-row items-start justify-between max-w-7xl mx-auto z-20 xl:items-center p-5">
+    <header className="sticky top-0 flex flex-col md:flex-row items-start justify-between max-w-7xl mx-auto z-20 xl:items-center p-1">
       {/* SOCIAL ICONS */}
       <motion.div
-        className="flex flex-row items-center gap-3"
+        className="flex flex-row items-center mx-auto"
         initial={{ y: 1000, opacity: 0, scale: 0.5 }}
         animate={{ y: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1.5 }}
@@ -52,7 +49,7 @@ const Header = (props: Props) => {
         initial={{ y: 1000, opacity: 0, scale: 0.5 }}
         animate={{ y: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1.5 }}
-        className="flex flex-row gap-3"
+        className="flex flex-row gap-3 mx-auto"
       >
         <button className="flex flex-row items-center justify-center cursor-pointer bg-[#00255E] rounded-3xl hover:bg-[#00a6ec] ease-in-out duration-500 ">
           <SocialIcon
