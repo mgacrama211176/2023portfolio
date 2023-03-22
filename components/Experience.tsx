@@ -9,10 +9,10 @@ interface experience{
   position : string;
   startedEnd : string;
   workLoad : string;
-
 }
 
 const userExperience : experience[] =[
+  {  picture : 'karmic.png', position: 'Inter', startedEnd:'2023',workLoad:'Automation Testing'},
   {  picture : 'karmic.png', position: 'Virtual Assistant', startedEnd:'2016-2017',workLoad:''},
 ]
 
@@ -21,26 +21,24 @@ console.log(userExperience)
 const Experience = (props: Props) => {
   return (
     <motion.div
-      className="h-screen flex flex-col relative  md:text-center md:flex-row justify-center items-center overflow-hidden text-left mx-auto"
+      className="h-screen w-screen flex flex-col relative md:text-center md:flex-row justify-evenly items-center overflow-hidden text-left mx-auto max-w-full px-10"
       initial={{ x: -200, opacity: 0 }}
       whileInView={{ x: 0, opacity: [1, 0.5, 1] }}
+      transition={{duration:1.5}}
       viewport={{once:true}}
     >
-      <h3 className="absolute top-28 uppercase tracking-[20px] text-md text-[#CB890D]">
+      <h3 className="absolute top-28 uppercase tracking-[20px] text-3xl text-[#CB890D]">
         Experience
       </h3>
 
-      <div className="flex flex-row w-full space-x-5 overflow-x-scroll  snap-x snap-mandatory lg:overflow-auto md:max-w-max ">
-        
+      <div className="flex flex-row w-full space-x-5 overflow-x-scroll snap-x snap-mandatory lg:overflow-auto md:max-w-max ">
       {  
-   userExperience.map((work)=>
+   userExperience.map((work)=> 
    (
-        <ExperienceCard work={work} key={work._id}/>
+        <ExperienceCard />
     )
   )
 }
-
-
       </div>
     </motion.div>
   );

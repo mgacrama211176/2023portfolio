@@ -10,10 +10,11 @@ const ExperienceCard = (props: Props) => {
     return `${src}?w=${width}&q=${quality || 100}`;
   };
   return (
-    <article className="flex flex-col items-center space-y-7 flex-shrink-0 w-[500px] md:w-[500px] snap-center bg-[#00255e] border rounded-xl text-[white] py-6 ">
+    <article className="flex flex-col items-center space-y-5 flex-shrink-0 w-[400px] md:w-[500px] xl:w-[900] snap-center bg-[#00255e] border rounded-xl text-[white] p-10 hover:opacity-100 opacity-80 transition-opacity duration-200 cursor-pointer overflow-hidden">
       <motion.div
         initial={{ y: -100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
+        viewport={{once:true}}
         transition={{ duration: 1 }}
       >
         <Image
@@ -22,7 +23,7 @@ const ExperienceCard = (props: Props) => {
           alt="Companies"
           width={320}
           height={320}
-          className="relative rounded-full w-32 mx-auto border object-cover object-center"
+          className="relative rounded-full w-32 h-32 xl:w-[200px] xl:h-[200px] mx-auto border object-cover object-center"
         />
       </motion.div>
 
@@ -36,12 +37,28 @@ const ExperienceCard = (props: Props) => {
             alt="Companies"
             width={320}
             height={320}
-            className="relative rounded-full w-10 mx-auto border object-cover object-center"
+            className="relative rounded-full w-10 h-10 mx-auto border object-cover object-center"
+          />
+          <Image
+            loader={myLoader}
+            src="karmic.png"
+            alt="Companies"
+            width={320}
+            height={320}
+            className="relative rounded-full w-10 h-10 mx-auto border object-cover object-center"
+          />
+          <Image
+            loader={myLoader}
+            src="karmic.png"
+            alt="Companies"
+            width={320}
+            height={320}
+            className="relative rounded-full w-10 h-10 mx-auto border object-cover object-center"
           />
           {/* Accounts */}
           {/* Accounts */}
         </div>
-        <p className="uppercase py-5">Started work: 2016 - Ended: 2017</p>
+        <p className="uppercase py-5 text-gray-300">Started work: 2016 - Ended: 2017</p>
         <ul className="list-disc space-y-4 ml-5 text-lg">
           <li>Summary points</li>
           <li>Summary points</li>
