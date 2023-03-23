@@ -4,10 +4,12 @@ import Experience from "../components/Experience";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Skills from "../components/Skills";
+import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 
 export default function Home() {
   return (
-    <div className=" h-screen snap-y snap-mandatory overflow-scroll z-0">
+    <div className=" h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-[#00255e]/20 scrollbar-thumb-[#D6A23F]/100">
       <Head>
         <title>Marlon G. Portfolio</title>
       </Head>
@@ -21,7 +23,7 @@ export default function Home() {
       <section id="about" className="snap-center">
         <About />
       </section>
-  
+
       <section id="experience" className="snap-center">
         <Experience />
       </section>
@@ -30,8 +32,13 @@ export default function Home() {
         <Skills />
       </section>
 
-      {/* PROJECTS */}
-      {/* CONTACT ME */}
+      <section id="projects" className="snap-start">
+        <Projects />
+      </section>
+
+      <section id="contact" className="snap-start">
+        <Contact />
+      </section>
     </div>
   );
 }

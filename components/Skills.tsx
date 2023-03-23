@@ -1,13 +1,40 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import Skill from "./Skill";
 
 type Props = {};
 
 const Skills = (props: Props) => {
-  return <motion.div className="h-screen w-screen flex flex-col relative md:text-center md:flex-row justify-evenly items-center overflow-hidden text-left mx-auto max-w-full px-10">
-    <h3 className="absolute top-28 uppercase tracking-[20px] text-3xl text-[#CB890D]">Skills</h3>
-    </motion.div>;
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+      className="flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center overflow-hidden"
+    >
+      <h3 className="absolute top-28 uppercase tracking-[20px] text-3xl text-[#CB890D]">
+        Skills
+      </h3>
+      <h3 className="absolute top-36 uppercase tracking-[3px] text-[#CB890D] text-sm">
+        Hover over a skill for skill profiency
+      </h3>
+
+      <div className="grid grid-cols-4 gap-5">
+        <Skill />
+        <Skill />
+        <Skill />
+        <Skill />
+        <Skill />
+        <Skill />
+        <Skill />
+        <Skill />
+        <Skill />
+        <Skill />
+        <Skill />
+        <Skill />
+      </div>
+    </motion.div>
+  );
 };
 
 export default Skills;
