@@ -18,15 +18,7 @@ const userExperience: experience[] = [
     startedEnd: "2023",
     workLoad: "Automation Testing",
   },
-  {
-    picture: "karmic.png",
-    position: "Inter",
-    startedEnd: "2023",
-    workLoad: "Automation Testing",
-  },
 ];
-
-console.log(userExperience);
 
 const Experience = (props: Props) => {
   return (
@@ -41,7 +33,7 @@ const Experience = (props: Props) => {
         Experience
       </h3>
 
-      <div className="flex flex-row w-full space-x-5 overflow-x-scroll snap-x snap-mandatory lg:overflow-auto md:max-w-max scrollbar scrollbar-thin scrollbar-track-[#00255e]/20 scrollbar-thumb-[#D6A23F]/100">
+      <div className="flex flex-row w-full space-x-5 overflow-x-scroll snap-x snap-mandatory lg:overflow-auto md:max-w-max scrollbar-thin scrollbar-track-[#00255e]/20 scrollbar-thumb-[#D6A23F]/100">
         {userExperience.map((work) => (
           <ExperienceCard />
         ))}

@@ -2,11 +2,11 @@ import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import { BsPerson } from "react-icons/bs";
+import Link from "next/link";
 
 type Props = {};
 
 const Header = (props: Props) => {
-
   return (
     <header className="sticky top-0 flex flex-col md:flex-row items-start justify-between max-w-7xl mx-auto z-20 xl:items-center p-1">
       {/* SOCIAL ICONS */}
@@ -51,13 +51,14 @@ const Header = (props: Props) => {
         transition={{ duration: 1.5 }}
         className="flex flex-row gap-3 mx-auto"
       >
-        <button className="flex flex-row items-center justify-center cursor-pointer bg-[#00255E] rounded-3xl hover:bg-[#D6A23F] ease-in-out duration-500 ">
+        <button className="flex flex-row items-center justify-center cursor-pointer bg-[#00255E] rounded-3xl hover:bg-[#D6A23F] ease-in-out duration-500">
           <SocialIcon
             className="cursor-pointer"
             network="email"
             fgColor="white"
             bgColor="transparent"
           />
+
           <p className="uppercase hidden md:inline-flex text-sm text-white pr-3 font-medium">
             Contact ME!
           </p>
