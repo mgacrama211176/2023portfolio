@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
 
@@ -7,7 +6,6 @@ type Props = {};
 const Projects = (props: Props) => {
   const projects = [1, 2, 3, 4, 5];
 
-  const [hover, setHover] = useState("");
   return (
     <motion.div className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center">
       <h3 className="absolute top-28 uppercase tracking-[20px] text-3xl text-[#CB890D]">

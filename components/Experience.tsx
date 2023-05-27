@@ -4,14 +4,14 @@ import ExperienceCard from "./ExperienceCard";
 
 type Props = {};
 
-interface experience {
+interface Experiences {
   picture: string;
   position: string;
   startedEnd: string;
   workLoad: string;
 }
 
-const userExperience: experience[] = [
+const userExperience: Experiences[] = [
   {
     picture: "karmic.png",
     position: "Inter",
@@ -35,7 +35,9 @@ const Experience = (props: Props) => {
 
       <div className="flex flex-row w-full space-x-5 overflow-x-scroll snap-x snap-mandatory lg:overflow-auto md:max-w-max scrollbar-thin scrollbar-track-[#00255e]/20 scrollbar-thumb-[#D6A23F]/100">
         {userExperience.map((work) => (
-          <ExperienceCard />
+          <div key={work.workLoad}>
+            <ExperienceCard />
+          </div>
         ))}
       </div>
     </motion.div>
