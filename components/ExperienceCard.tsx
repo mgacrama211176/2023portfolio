@@ -19,21 +19,21 @@ const ExperienceCard = (props: Props) => {
       >
         <Image
           loader={myLoader}
-          src="TE.png"
+          src="/Experience/ACN/ACN.png"
           alt="Companies"
-          width={320}
-          height={320}
-          className="relative rounded-full w-32 h-32 xl:w-[150px] xl:h-[150px] mx-auto border object-cover object-center"
+          width={250}
+          height={250}
+          className="relative rounded-full w-28 h-28 xl:w-[150px] xl:h-[150px] mx-auto border object-center object-contain bg-white"
         />
       </motion.div>
 
       <div className="px-0 md:px-10 flex flex-col items-center">
-        <h4 className="text-4xl font-light md:text-2xl">Virtual Assistant</h4>
-        <p className="font-bold text-2xl md:text-xl mt-1">Tasks Everyday</p>
+        <h4 className="text-2xl font-light md:text-2xl">Intern</h4>
+        <p className="font-bold text-2xl md:text-xl mt-1">Accenture Inc.</p>
         <div className="flex space-x-2 my-2">
           <Image
             loader={myLoader}
-            src="karmic.png"
+            src="/Experience/ACN/selenium.png"
             alt="Companies"
             width={320}
             height={320}
@@ -41,15 +41,15 @@ const ExperienceCard = (props: Props) => {
           />
           <Image
             loader={myLoader}
-            src="karmic.png"
+            src="/Experience/ACN/python.png"
             alt="Companies"
             width={320}
             height={320}
-            className="relative rounded-full w-10 h-10 mx-auto border object-cover object-center"
+            className="relative rounded-full w-10 h-10 mx-auto border object-cover object-center bg-white"
           />
           <Image
             loader={myLoader}
-            src="karmic.png"
+            src="/Experience/ACN/saleforce.png"
             alt="Companies"
             width={320}
             height={320}
@@ -58,14 +58,16 @@ const ExperienceCard = (props: Props) => {
           {/* Accounts */}
           {/* Accounts */}
         </div>
-        <p className="uppercase py-5 text-gray-300">
-          Started work: 2016 - Ended: 2017
+        <p className="uppercase py-2 md:py-5 text-gray-300">
+          January 10,2023 - April 4,2023
         </p>
-        <ul className="list-disc space-y-4 ml-5 text-lg">
-          <li>Summary points</li>
-          <li>Summary points</li>
-          <li>Summary points</li>
-          <li>Summary points</li>
+        <ul className="list-disc space-y-2 md:space-y-4 ml-5 text-lg">
+          <li>System Automation</li>
+          <li>Salesforce Modules</li>
+          <li>
+            Project Flow <p>(from documentation to development)</p>{" "}
+          </li>
+          <li>Japanese Learning (N5 Level)</li>
         </ul>
       </div>
     </article>

@@ -4,7 +4,10 @@ import { SocialIcon } from "react-social-icons";
 type Props = {};
 
 const Projects = (props: Props) => {
-  const projects = [1, 2, 3, 4, 5];
+  const projects = [
+    { title: "Talpakan", about: "" },
+    { title: "E-Loan", about: "" },
+  ];
 
   return (
     <motion.div className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center">
@@ -14,7 +17,10 @@ const Projects = (props: Props) => {
 
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar  scrollbar-track-[#00255e]/20 scrollbar-thumb-[#D6A23F]/100">
         {projects.map((project) => (
-          <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-[14px] md:p-44 h-screen ">
+          <div
+            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-[14px] md:p-44 h-screen "
+            key={project.title}
+          >
             <motion.img
               initial={{ y: -300, opacity: 0 }}
               transition={{ duration: 1.2 }}

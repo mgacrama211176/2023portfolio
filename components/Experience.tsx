@@ -29,11 +29,11 @@ const Experience = (props: Props) => {
       transition={{ duration: 1.5 }}
       viewport={{ once: true }}
     >
-      <h3 className="absolute top-28 uppercase tracking-[20px] text-3xl text-[#CB890D]">
+      <h3 className="absolute top-28 md:top-20 uppercase tracking-[20px] text-3xl text-[#CB890D]">
         Experience
       </h3>
 
-      <div className="flex flex-row w-full space-x-5 overflow-x-scroll snap-x snap-mandatory lg:overflow-auto md:max-w-max scrollbar-thin scrollbar-track-[#00255e]/20 scrollbar-thumb-[#D6A23F]/100">
+      <div className="flex flex-row w-full space-x-3 overflow-x-scroll snap-x snap-mandatory lg:overflow-auto md:max-w-max scrollbar-thin scrollbar-track-[#00255e]/20 scrollbar-thumb-[#D6A23F]/100">
         {userExperience.map((work) => (
           <div key={work.workLoad}>
             <ExperienceCard />

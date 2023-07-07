@@ -2,7 +2,19 @@ import React from "react";
 import { motion } from "framer-motion";
 import Skill from "./Skill";
 
-type Props = {};
+type Props = {
+  techStack: {
+    title: string;
+    image: string;
+  };
+};
+
+const Techs = [
+  { title: "HTML5", image: "/Skills/html5.png" },
+  { title: "CSS3", image: "" },
+  { title: "javascript", image: "" },
+  { title: "ReactJS", image: "" },
+];
 
 const Skills = (props: Props) => {
   return (
@@ -20,18 +32,9 @@ const Skills = (props: Props) => {
       </h3>
 
       <div className="grid grid-cols-4 gap-5">
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
+        {Techs.map((skill) => (
+          <Skill key={skill.title} techStack={skill} />
+        ))}
       </div>
     </motion.div>
   );

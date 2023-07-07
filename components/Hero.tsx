@@ -10,8 +10,8 @@ const Hero = (props: Props) => {
   const [main, count] = useTypewriter({
     words: [
       "Hi! I'm Marlon G. 🙋‍♂️",
-      "Youtube Creator 🎥",
-      "Accenture Intern ⚒️",
+      "Youtube Content Creator 🎥",
+      "Web / Mobile Developer ⚒️",
     ],
     loop: true,
     delaySpeed: 2000,
