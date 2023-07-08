@@ -29,7 +29,7 @@ const Experience = (props: Props) => {
       transition={{ duration: 1.5 }}
       viewport={{ once: true }}
     >
-      <h3 className="absolute top-28 md:top-20 uppercase tracking-[20px] text-3xl text-[#CB890D]">
+      <h3 className="absolute top-28 md:top-20 uppercase tracking-[10px] md:tracking-[20px] text-3xl text-[#CB890D]">
         Experience
       </h3>
 

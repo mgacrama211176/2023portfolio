@@ -14,7 +14,7 @@ const About = (props: Props) => {
         className="absolute top-[110px]  md:top-[100px] lg:top-24 uppercase tracking-[20px] text-3xl text-[#CB890D] "
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: [1, 0.5, 1] }}
-        viewport={{once:true}}
+        viewport={{ once: true }}
       >
         About
       </motion.h3>
@@ -22,7 +22,7 @@ const About = (props: Props) => {
       <motion.div
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: [1, 0.5, 1] }}
-        viewport={{once:true}}
+        viewport={{ once: true }}
       >
         <Image
           loader={myLoader}
@@ -44,16 +44,17 @@ const About = (props: Props) => {
         </h4>
         {/* <button className="rounded-full  border  p-2 text-[white] bg-[#CB890E]">Click me! </button> */}
         <p className=" text-[#00255e] text-sm md:text-md lg:text-lg">
-          Hi there! My name is Marlon and I am a Bachelor of Science in Information Technology graduate pursuing a career in web and mobile development. 
-          Just finished my internship at Accenture Inc., where I have the opportunity to apply my
-          skills and learn from industry professionals. In addition to my
-          passion for coding and web development, I also enjoy content creation
-          and gaming. Throughout my studies and career, I have completed
-          multiple web projects, both for personal projects and through
-          freelance work. I am always looking for ways to improve and grow, both
-          personally and professionally. In my free time, I enjoy staying
-          up-to-date on the latest trends in the industry and playing online
-          multiplayer games.
+          Hi there! My name is Marlon and I am a Bachelor of Science in
+          Information Technology graduate pursuing a career in web and mobile
+          development. Just finished my internship at Accenture Inc., where I
+          have the opportunity to apply my skills and learn from industry
+          professionals. In addition to my passion for coding and web
+          development, I also enjoy content creation and gaming. Throughout my
+          studies and career, I have completed multiple web projects, both for
+          personal projects and through freelance work. I am always looking for
+          ways to improve and grow, both personally and professionally. In my
+          free time, I enjoy staying up-to-date on the latest trends in the
+          industry and playing online multiplayer games.
         </p>
       </motion.div>
     </div>

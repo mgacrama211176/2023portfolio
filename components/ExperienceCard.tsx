@@ -61,7 +61,7 @@ const ExperienceCard = (props: Props) => {
         <p className="uppercase py-2 md:py-5 text-gray-300">
           January 10,2023 - April 4,2023
         </p>
-        <ul className="list-disc space-y-2 md:space-y-4 ml-5 text-lg">
+        <ul className="list-disc space-y-2 md:space-y-4 ml-14 md:ml-5 text-lg">
           <li>System Automation</li>
           <li>Salesforce Modules</li>
           <li>

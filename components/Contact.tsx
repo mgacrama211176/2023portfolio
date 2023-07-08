@@ -28,8 +28,8 @@ const Contact = (props: Props) => {
         Contact
       </h3>
       <div>
-        <h4 className="text-2xl md:text-3xl xl:text-4xl font-semibold text-center flex flex-col text-[#00255e] mb-5">
-          Looking for a Web developer?
+        <h4 className="text-xl md:text-2xl xl:text-4xl font-semibold text-center flex flex-col text-[#00255e] mb-5">
+          Looking for a Web/Mobile developer?
           <span className="decoration-[#CB890D]/50 underline  text-[#CB890D]">
             Lets Talk
           </span>
@@ -37,21 +37,21 @@ const Contact = (props: Props) => {
         <div className="space-y-5">
           <div className="flex items-center space-x-5 justify-center">
             <PhoneIcon className="text-[#00255e] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">+63 939 681 0206</p>
+            <p className="text-xl md:text-2xl">+63 939 681 0206</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
             <MapPinIcon className="text-[#00255e] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">Cebu City, Philippines</p>
+            <p className="text-xl md:text-2xl">Cebu City, Philippines</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
             <EnvelopeIcon className="text-[#00255e] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">mgacrama_ccs@uspf.edu.ph</p>
+            <p className="text-xl md:text-2xl">mgacrama_ccs@uspf.edu.ph</p>
           </div>
           <form
             className="flex flex-col space-y-2 w-fit mx-auto"
             onSubmit={handleSubmit(onSubmit)}
           >
-            <div className="flex space-x-2">
+            <div className="flex md:space-x-2 flex-col md:flex-row">
               <input
                 placeholder="Name"
                 className="contactInput"

@@ -5,8 +5,30 @@ type Props = {};
 
 const Projects = (props: Props) => {
   const projects = [
-    { title: "Talpakan", about: "" },
-    { title: "E-Loan", about: "" },
+    {
+      title: "Chicken fight: Talpakan",
+      about:
+        "Talpakan is a chicken RPG game where chickens fight with skills based on luck. Each player has a maximum HP of 100 and who ever chicken that gets the other players HP to 0 wins the game.",
+      image: "",
+      source: "",
+      demo: "",
+    },
+    {
+      title: "E-Loan",
+      about:
+        "E-Loan Management system is for individuals who wants to make their eloan business managable where this can view, sort, add, delete clients at the same time all users will be able to see all blocked clients so that they can avoid these clients or automatically deny their loan to avoid monetary loss.",
+      image: "",
+      source: "",
+      demo: "",
+    },
+    {
+      title: "FilAnime",
+      about:
+        "E-Loan Management system is for individuals who wants to make their eloan business managable where this can view, sort, add, delete clients at the same time all users will be able to see all blocked clients so that they can avoid these clients or automatically deny their loan to avoid monetary loss.",
+      image: "",
+      source: "",
+      demo: "",
+    },
   ];
 
   return (
@@ -31,15 +53,12 @@ const Projects = (props: Props) => {
             />
             <div className="space-y-5 px-0 md:px-10 max-w-6xl">
               <h4 className="text-center">
-                <span className="text-4xl font-semibold underline">
-                  Chicken Fight: Talpakan
+                <span className="text-2xl md:text-4xl font-semibold underline">
+                  {project.title}
                 </span>
               </h4>
               <p className="text-sm text-center md:text-left">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-                amet molestiae nihil. Cupiditate nobis reiciendis dicta animi
-                culpa laboriosam? Dolore debitis ad illum odio eligendi aperiam
-                quae veniam cumque dignissimos?
+                {project.about}
               </p>
 
               <div className="flex flex-row justify-center items-center gap-20 group-hover:border-[#CB890D]">
@@ -53,7 +72,7 @@ const Projects = (props: Props) => {
                 </button>
                 <button className="border rounded-lg border-[#00255E] p-2 ">
                   <SocialIcon
-                    url="https://github.com/mgacrama211176"
+                    url="https://mgacrama211176.github.io/js-talpakan-game//"
                     fgColor="#CB890D"
                     bgColor="transparent"
                   />
