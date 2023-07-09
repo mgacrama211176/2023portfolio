@@ -51,20 +51,18 @@ const Header = (props: Props) => {
         transition={{ duration: 1.5 }}
         className="flex flex-row gap-3 mx-auto"
       >
-        <Link href="#contact">
-          <button className="flex flex-row items-center justify-center cursor-pointer bg-[#00255E] rounded-3xl hover:bg-[#D6A23F] ease-in-out duration-500">
-            <SocialIcon
-              className="cursor-pointer"
-              network="email"
-              fgColor="white"
-              bgColor="transparent"
-            />
+        <button className="flex flex-row items-center justify-center cursor-pointer bg-[#00255E] rounded-3xl hover:bg-[#D6A23F] ease-in-out duration-500">
+          <SocialIcon
+            className="cursor-pointer"
+            network="email"
+            fgColor="white"
+            bgColor="transparent"
+          />
 
-            <p className="uppercase hidden md:inline-flex text-sm text-white pr-3 font-medium">
-              Contact ME!
-            </p>
-          </button>
-        </Link>
+          <p className="uppercase hidden md:inline-flex text-sm text-white pr-3 font-medium">
+            Contact ME!
+          </p>
+        </button>
 
         <a href="/files/cv.pdf" target="_blank" download>
           <button className="flex flex-row items-center justify-center cursor-pointer bg-[#00255E] rounded-3xl hover:bg-[#D6A23F] ease-in-out duration-500 p-4 gap-2">

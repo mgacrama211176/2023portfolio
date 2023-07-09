@@ -85,10 +85,12 @@ const Projects = (props: Props) => {
                 <h1 className="text-center text-xl">Techonologies used</h1>
                 <div className="flex justify-center p-2 flex-wrap">
                   {project.technologies?.map((tech) => (
-                    <img
-                      src={tech.image}
-                      className=" w-16 rounded-full m-2 object-cover"
-                    />
+                    <div key={tech.title}>
+                      <img
+                        src={tech.image}
+                        className=" w-16 rounded-full m-2 object-cover"
+                      />
+                    </div>
                   ))}
                 </div>
               </div>

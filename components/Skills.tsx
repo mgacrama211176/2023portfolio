@@ -20,6 +20,7 @@ const Techs = [
   { title: "Express", image: "/Skills/express.png" },
   { title: "Expo", image: "/Skills/expo.png" },
   { title: "tailwind", image: "/Skills/tailwind.png" },
+  { title: "styled", image: "/Skills/styled.png" },
   { title: "Php", image: "/Skills/php.png" },
   { title: "Python", image: "/Skills/python.png" },
   { title: "Selenium", image: "/Skills/selenium.png" },
