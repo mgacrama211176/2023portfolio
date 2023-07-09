@@ -33,7 +33,7 @@ const ExperienceCard = (props: Props) => {
         <div className="flex space-x-2 my-2">
           <Image
             loader={myLoader}
-            src="/Experience/ACN/selenium.png"
+            src="/Skills/selenium.png"
             alt="Companies"
             width={320}
             height={320}
