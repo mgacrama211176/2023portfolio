@@ -26,10 +26,10 @@ const About = (props: Props) => {
       >
         <Image
           loader={myLoader}
-          src="about.jpg"
-          alt="Profile Image"
-          width={320}
-          height={320}
+          src="/about/about.jpg"
+          alt="About Image"
+          width={0}
+          height={0}
           className="relative rounded-full w-36 md:w-44 mx-auto mb-0 md:mb-0 flex-shrink-0 object-cover lg:w-64 lg:h-95 xl:w-[400px] xl:h-[500px]"
         />
       </motion.div>

@@ -88,7 +88,7 @@ const Projects = (props: Props) => {
                     <div key={tech.title}>
                       <img
                         src={tech.image}
-                        className=" w-16 rounded-full m-2 object-cover"
+                        className=" w-16 h-16 rounded-full m-2 object-cover object-center"
                       />
                     </div>
                   ))}
