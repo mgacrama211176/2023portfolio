@@ -2,25 +2,72 @@ import React from "react";
 import { motion } from "framer-motion";
 import ExperienceCard from "./ExperienceCard";
 
-type Props = {};
+type Props = {
+  company: {
+    id: number;
+    picture: string;
+    position: string;
+    companyName: string;
+    techUsed: Array<string>;
+    startedEnd: string;
+    workLoad: Array<string>;
+  };
+};
 
 interface Experiences {
+  id: number;
   picture: string;
   position: string;
+  companyName: string;
+  techUsed: Array<string>;
   startedEnd: string;
-  workLoad: string;
+  workLoad: Array<string>;
 }
 
 const userExperience: Experiences[] = [
   {
-    picture: "karmic.png",
-    position: "Inter",
-    startedEnd: "2023",
-    workLoad: "Automation Testing",
+    id: 1,
+    picture: "/Experience/ACN/ACN.png",
+    position: "Intern",
+    companyName: "Accenture Inc.",
+    techUsed: [
+      "/Skills/selenium.png",
+      "/Experience/ACN/python.png",
+      "/Experience/ACN/saleforce.png",
+    ],
+    startedEnd: "January 10,2023 - April 4,2023",
+    workLoad: [
+      "Automation Testing",
+      "System Automation",
+      "Salesforce Modules",
+      "Project Flow (AGILE)",
+      "Japanese Learning N5 Level",
+    ],
+  },
+  {
+    id: 2,
+    picture: "/Experience/ACN/freelancer.png",
+    position: "Freelance",
+    companyName: "Project Based",
+    techUsed: [
+      "/Skills/react.png",
+      "/Skills/node.webp",
+      "/Skills/mongodb.gif",
+      "/Skills/express.png",
+      "/Skills/github.png",
+    ],
+    startedEnd: "November 2022 - Present",
+    workLoad: [
+      "UI/UX Design",
+      "Database management",
+      "Frontend Development",
+      "Backend Development",
+    ],
   },
 ];
 
 const Experience = (props: Props) => {
+  const { company } = props;
   return (
     <motion.div
       className="h-screen w-screen flex flex-col relative md:text-center md:flex-row justify-evenly items-center overflow-hidden text-left mx-auto max-w-full px-10"
@@ -35,8 +82,8 @@ const Experience = (props: Props) => {
 
       <div className="flex flex-row w-full space-x-3 overflow-x-scroll snap-x snap-mandatory lg:overflow-auto md:max-w-max scrollbar-thin scrollbar-track-[#00255e]/20 scrollbar-thumb-[#D6A23F]/100">
         {userExperience.map((work) => (
-          <div key={work.workLoad}>
-            <ExperienceCard />
+          <div key={work.id}>
+            <ExperienceCard company={work} />
           </div>
         ))}
       </div>

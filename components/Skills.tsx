@@ -22,12 +22,14 @@ const Techs = [
   { title: "tailwind", image: "/Skills/tailwind.png" },
   { title: "styled", image: "/Skills/styled.png" },
   { title: "Php", image: "/Skills/php.png" },
+  { title: "mysql", image: "/Skills/mysql.png" },
   { title: "Python", image: "/Skills/python.png" },
   { title: "Selenium", image: "/Skills/selenium.png" },
   { title: "Salseforce", image: "/Skills/salesforce.jpeg" },
   { title: "Figma", image: "/Skills/figma.png" },
   { title: "XD", image: "/Skills/xd.png" },
   { title: "canva", image: "/Skills/canva.png" },
+  { title: "github", image: "/Skills/github.png" },
 ];
 
 const Skills = (props: Props) => {

@@ -38,7 +38,7 @@ const Projects = (props: Props) => {
     {
       title: "FilAnime",
       about:
-        "Filanme is a Filipino animator website where animators can showcase their works and at the same time show employers their own arts. FilAnime is a hybrid of Youtube and LinkedIn where employers and animators can interact and rate the animator or make profiling easier for the employers since the app can sort all animators who are looking for jobs or freelance.",
+        "Filanime is a Filipino animator website where animators can showcase their works and at the same time show employers their own arts. FilAnime is a hybrid of Youtube and LinkedIn where employers and animators can interact and rate the animator or make profiling easier for the employers since the app can sort all animators who are looking for jobs or freelance.",
       image: "/Projects/filanime.png",
       source: "https://github.com/mgacrama211176/capsFront",
       demo: "https://filanime.vercel.app/",
@@ -48,6 +48,22 @@ const Projects = (props: Props) => {
         { title: "Node", image: "/Skills/node.webp" },
         { title: "Express", image: "/Skills/express.png" },
         { title: "Mongo", image: "/Skills/mongodb.gif" },
+      ],
+    },
+    {
+      title: "Gether",
+      about:
+        "Gether Web App is a gamer paring app where players can use to meet and know people with the same genre of games that they play. They can also use the app to communicate with their friends using it's chat app.",
+      image: "/Projects/getherPNG.png",
+      source: "https://github.com/mgacrama211176/getHerFront",
+      demo: "https://getherapp-six.vercel.app/",
+      technologies: [
+        { title: "ReactJS", image: "/Skills/react.png" },
+        { title: "tailwind", image: "/Skills/tailwind.png" },
+        { title: "Node", image: "/Skills/node.webp" },
+        { title: "Express", image: "/Skills/express.png" },
+        { title: "Mongo", image: "/Skills/mongodb.gif" },
+        { title: "Expo", image: "/Skills/expo.png" },
       ],
     },
   ];
