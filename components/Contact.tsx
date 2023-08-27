@@ -77,7 +77,7 @@ const Contact = (props: Props) => {
               {...register("message")}
             />
             <button
-              className="bg-[#00255e] py-5 px-10 rounded-md text-black font-bold text-lg hover:text-white hover:bg-[#CB890D] transition ease-in-out"
+              className="bg-[#00255e] py-5 px-10 rounded-md font-bold text-lg text-white hover:bg-[#CB890D] transition ease-in-out"
               type="submit"
             >
               Submit
