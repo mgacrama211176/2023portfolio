@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   PhoneIcon,
   MapPinIcon,
@@ -18,9 +18,22 @@ type Inputs = {
 
 const Contact = (props: Props) => {
   const { register, handleSubmit } = useForm<Inputs>();
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
-    window.location.href = `mailto:mgacrama_ccs@uspf.edu.ph?subject=${formData.subject}&body=Hi, my name is ${formData.name}. 
-    ${formData.message}`;
+    setIsLoading(true);
+    fetch("/api/email", {
+      method: "POST",
+      body: JSON.stringify(formData),
+    })
+      .then(() => {
+        setIsLoading(false);
+        alert("Email sent successfully");
+      })
+      .catch((error) => {
+        setIsLoading(false);
+        alert("Error sending email");
+      });
   };
   return (
     <div className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center">
@@ -45,7 +58,7 @@ const Contact = (props: Props) => {
           </div>
           <div className="flex items-center space-x-5 justify-center">
             <EnvelopeIcon className="text-[#00255e] h-7 w-7 animate-pulse" />
-            <p className="text-xl md:text-2xl">mgacrama_ccs@uspf.edu.ph</p>
+            <p className="text-xl md:text-2xl">maruronu@gmail.com</p>
           </div>
           <form
             className="flex flex-col space-y-2 w-fit mx-auto"
@@ -80,7 +93,7 @@ const Contact = (props: Props) => {
               className="bg-[#00255e] py-5 px-10 rounded-md font-bold text-lg text-white hover:bg-[#CB890D] transition ease-in-out"
               type="submit"
             >
-              Submit
+              {isLoading ? "Sending..." : "Submit"}
             </button>
           </form>
         </div>
