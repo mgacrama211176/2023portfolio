@@ -1,6 +1,4 @@
 import { motion } from "framer-motion";
-import Image from "next/image";
-import { useState } from "react";
 import { SocialIcon } from "react-social-icons";
 
 type Props = {};
@@ -100,6 +98,9 @@ const Projects = (props: Props) => {
               viewport={{ once: true }}
               src={project.image}
               className="w-fit md:w-[500px] rounded-xl"
+              alt={project.title}
+              width={500}
+              height={500}
             />
             <div className="space-y-5 px-0 md:px-10 max-w-6xl">
               <h4 className="text-center">
