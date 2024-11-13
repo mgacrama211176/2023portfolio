@@ -24,7 +24,7 @@ const Projects = (props: Props) => {
       title: "Document Management Tasmania",
       about:
         "DMTas Branding Website is a website for a client who wants to showcase their brand and their products. The website is made with NextJS and TailwindCSS.",
-      image: "/Projects/DMTas.png",
+      image: "/Projects/DMtas.png",
       demo: "https://dmtas.com.au/",
       technologies: [
         { title: "next", image: "/Skills/next.jpeg" },
