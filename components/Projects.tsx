@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
+
 import { SocialIcon } from "react-social-icons";
 
 type Props = {};
@@ -91,17 +93,21 @@ const Projects = (props: Props) => {
             className="w-screen flex-shrink-0 snap-center flex flex-col  items-center justify-center p-[14px] md:p-44 h-screen "
             key={project.title}
           >
-            <motion.img
+            <motion.div
               initial={{ y: -300, opacity: 0 }}
               transition={{ duration: 1.2 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              src={project.image}
-              className="w-fit md:w-[500px] rounded-xl"
-              alt={project.title}
-              width={500}
-              height={500}
-            />
+            >
+              <Image
+                src={project.image}
+                alt={project.title}
+                width={500}
+                height={500}
+                className="w-fit md:w-[500px] rounded-xl"
+                priority
+              />
+            </motion.div>
             <div className="space-y-5 px-0 md:px-10 max-w-6xl">
               <h4 className="text-center">
                 <span className="text-2xl md:text-4xl font-semibold underline">
