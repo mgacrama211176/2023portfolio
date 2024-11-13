@@ -22,10 +22,8 @@ const ExperienceCard = (props: Props) => {
 
   const { company } = props;
 
-  console.log(company);
-
   return (
-    <article className="flex flex-col items-center space-y-4 flex-shrink-0 w-[400px] md:w-[500px] xl:w-[900] snap-center bg-[#00255e] border rounded-xl text-[white] p-10 hover:opacity-100 opacity-80 transition-opacity duration-200 cursor-pointer overflow-hidden">
+    <article className="flex flex-col items-center space-y-4 flex-shrink-0 w-[400px] h-[600px] md:w-[500px] xl:w-[900] snap-center bg-[#00255e] border rounded-xl text-[white] p-10 hover:opacity-100 opacity-80 transition-opacity duration-200 cursor-pointer overflow-hidden">
       <motion.div
         initial={{ y: -100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -69,12 +67,6 @@ const ExperienceCard = (props: Props) => {
           {company.workLoad.map((workLoad) => (
             <li key={workLoad}>{workLoad}</li>
           ))}
-          {/* <li>System Automation</li>
-          <li>Salesforce Modules</li>
-          <li>
-            Project Flow <p>(from documentation to development)</p>{" "}
-          </li>
-          <li>Japanese Learning (N5 Level)</li> */}
         </ul>
       </div>
     </article>

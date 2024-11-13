@@ -8,6 +8,7 @@ import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Link from "next/link";
 import { ArrowUpIcon } from "@heroicons/react/20/solid";
+import AIChatWidget from "../components/chat";
 
 export default function Home() {
   return (
@@ -64,6 +65,8 @@ export default function Home() {
           </div>
         </footer>
       </Link>
+
+      {/* <AIChatWidget /> */}
     </div>
   );
 }

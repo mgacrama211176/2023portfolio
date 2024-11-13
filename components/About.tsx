@@ -44,17 +44,20 @@ const About = (props: Props) => {
         </h4>
         {/* <button className="rounded-full  border  p-2 text-[white] bg-[#CB890E]">Click me! </button> */}
         <p className=" text-[#00255e] text-sm md:text-md lg:text-lg">
-          Hi there! My name is Marlon and I am a Bachelor of Science in
-          Information Technology graduate pursuing a career in web and mobile
-          development. Just finished my internship at Accenture Inc., where I
-          have the opportunity to apply my skills and learn from industry
-          professionals. In addition to my passion for coding and web
-          development, I also enjoy content creation and gaming. Throughout my
-          studies and career, I have completed multiple web projects, both for
-          personal projects and through freelance work. I am always looking for
-          ways to improve and grow, both personally and professionally. In my
-          free time, I enjoy staying up-to-date on the latest trends in the
-          industry and playing online multiplayer games.
+          Hello! I'm Marlon, a Bachelor of Science in Information Technology
+          graduate with experience as a full-stack developer. After enriching my
+          skills during an internship at Accenture Inc., I've continued to grow
+          professionally by working on diverse web and mobile development
+          projects, both personal and freelance. I'm currently expanding my
+          expertise into the field of artificial intelligence, eager to
+          integrate AI solutions into my development work. Passionate about
+          coding and always seeking new challenges, I thrive on learning and
+          professional growth. In addition to development, I enjoy content
+          creation and gaming, staying up-to-date with the latest industry
+          trends. In my free time, you'll often find me playing online
+          multiplayer games or exploring emerging technologies. I'm excited to
+          bring my skills and enthusiasm to a dynamic team where I can
+          contribute and continue to evolve in the tech industry.
         </p>
       </motion.div>
     </div>

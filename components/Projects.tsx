@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useState } from "react";
 import { SocialIcon } from "react-social-icons";
 
 type Props = {};
@@ -17,6 +18,18 @@ const Projects = (props: Props) => {
         { title: "html5", image: "/Skills/html5.png" },
         { title: "css3", image: "/Skills/css.png" },
         { title: "JS", image: "/Skills/js.png" },
+      ],
+    },
+    {
+      title: "Document Management Tasmania",
+      about:
+        "DMTas Branding Website is a website for a client who wants to showcase their brand and their products. The website is made with NextJS and TailwindCSS.",
+      image: "/Projects/DMTas.png",
+      demo: "https://dmtas.com.au/",
+      technologies: [
+        { title: "next", image: "/Skills/next.jpeg" },
+        { title: "tailwind", image: "/Skills/tailwind.png" },
+        { title: "Firebase", image: "/Skills/firebase.png" },
       ],
     },
     {

@@ -64,6 +64,29 @@ const userExperience: Experiences[] = [
       "Backend Development",
     ],
   },
+  {
+    id: 3,
+    picture: "/Experience/ACN/SOS.jpeg",
+    position: "Web Developer",
+    companyName: "Staff Outsourcing Solutions",
+    techUsed: [
+      "/Skills/node.webp",
+      "/Skills/mongodb.gif",
+      "/Skills/express.png",
+      "/Skills/github.png",
+      "/Skills/next.jpeg",
+      "/Skills/tailwind.png",
+    ],
+    startedEnd: "Sept 2023 - Sept 2024",
+    workLoad: [
+      "Frontend Development",
+      "Backend Development",
+      "Database Management",
+      "API Integration",
+      "Project Management",
+      "UI/UX Design",
+    ],
+  },
 ];
 
 const Experience = (props: Props) => {

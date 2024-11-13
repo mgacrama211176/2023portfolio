@@ -60,7 +60,7 @@ const Header = (props: Props) => {
           />
 
           <p className="uppercase hidden md:inline-flex text-sm text-white pr-3 font-medium">
-            Contact ME!
+            Lets talk!
           </p>
         </button>
 

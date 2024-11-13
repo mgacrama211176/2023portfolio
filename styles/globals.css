@@ -11,3 +11,73 @@
     @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#00255e] text-[#00255e] transition-all focus:border-[#CB890D]/40 focus:text-[#CB890D] hover:border-[#CB890D]/40;
   }
 }
+
+.typing-indicator {
+  display: flex;
+  gap: 4px;
+}
+
+.typing-indicator span {
+  width: 8px;
+  height: 8px;
+  background-color: #9ca3af;
+  border-radius: 50%;
+  animation: bounce 1.4s infinite ease-in-out;
+}
+
+.typing-indicator span:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+@keyframes bounce {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+/* Add these at the bottom of your file */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Add these responsive utility classes */
+@media (max-width: 768px) {
+  .typing-indicator span {
+    width: 6px;
+    height: 6px;
+  }
+
+  .typing-indicator {
+    gap: 3px;
+  }
+}
+
+/* Improve scrollbar appearance on mobile */
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(156, 163, 175, 0.5);
+    border-radius: 2px;
+  }
+}

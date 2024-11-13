@@ -32,7 +32,7 @@ const Hero = (props: Props) => {
         height={320}
         className="relative rounded-full w-40 mx-auto"
       />
-      <div className="border border-[#00255e] bg-[#00255e]  rounded-full p-4 z-20">
+      <div className="border border-[#00255e] bg-[#00255e] rounded-full p-4 z-20">
         <h2 className="text-sm uppercase pb-2 tracking-[5px] text-1xl font-semibold">
           Full Stack Web Developer
         </h2>
