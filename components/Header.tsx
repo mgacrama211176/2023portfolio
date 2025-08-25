@@ -8,7 +8,7 @@ type Props = {};
 
 const Header = (props: Props) => {
   return (
-    <header className="sticky top-0 flex flex-col md:flex-row items-start justify-between max-w-7xl mx-auto z-20 xl:items-center p-1">
+    <header className="flex flex-col md:flex-row items-start justify-between w-full  z-20 xl:items-center p-1">
       {/* SOCIAL ICONS */}
       <motion.div
         className="flex flex-row items-center mx-auto"

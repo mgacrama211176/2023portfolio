@@ -9,59 +9,95 @@ const About = (props: Props) => {
     return `${src}?w=${width}&q=${quality || 100}`;
   };
   return (
-    <div className="h-screen flex flex-col relative text-center lg:text-center lg:flex-row max-w-8xl pt-28 px-3 justify-evenly items-center ">
-      <motion.h3
-        className="absolute top-[110px]  md:top-[100px] lg:top-24 uppercase tracking-[20px] text-3xl text-[#CB890D] "
-        initial={{ x: -200, opacity: 0 }}
-        whileInView={{ x: 0, opacity: [1, 0.5, 1] }}
-        viewport={{ once: true }}
-      >
-        About
-      </motion.h3>
+    <section className="h-full bg-gradient-to-b from-white to-gray-500/50 relative">
+      {/* Section Header */}
+      <div className="h-24 ">
+        <motion.h2
+          className="text-5xl font-bold bg-gradient-to-r from-[#00255e] via-[#CB890D] to-[#00255e] bg-clip-text text-transparent pb-2 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          About the developer
+        </motion.h2>
+      </div>
 
-      <motion.div
-        initial={{ x: -200, opacity: 0 }}
-        whileInView={{ x: 0, opacity: [1, 0.5, 1] }}
-        viewport={{ once: true }}
-      >
-        <Image
-          loader={myLoader}
-          src="/about/about.jpg"
-          alt="About Image"
-          width={0}
-          height={0}
-          className="relative rounded-full w-36 md:w-44 mx-auto mb-0 md:mb-0 flex-shrink-0 object-cover lg:w-64 lg:h-95 xl:w-[400px] xl:h-[500px]"
-        />
-      </motion.div>
+      {/* Main Content */}
+      <div className="container mx-auto px-4 pt-32 pb-16 max-w-6xl">
+        <div className="grid md:grid-cols-12 gap-8 md:gap-12 items-start">
+          {/* Image Column */}
+          <motion.div
+            className="md:col-span-5 lg:col-span-4"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <div className="relative aspect-square overflow-hidden rounded-lg shadow-xl bg-white p-2">
+              <Image
+                loader={myLoader}
+                src="/about/about.jpg"
+                alt="Marlon Gacrama"
+                width={400}
+                height={400}
+                className="object-cover w-full h-full rounded-lg"
+                priority
+              />
+            </div>
+          </motion.div>
 
-      <motion.div
-        className="max-w-2xl"
-        initial={{ x: 200, opacity: 0 }}
-        whileInView={{ x: 0, opacity: [1, 0.5, 1] }}
-      >
-        <h4 className="text-3xl font-semibold  text-[#00255e] pb-3">
-          Marlon Gacrama Jr
-        </h4>
-        {/* <button className="rounded-full  border  p-2 text-[white] bg-[#CB890E]">Click me! </button> */}
-        <p className=" text-[#00255e] text-sm md:text-md lg:text-lg">
-          Hello! I&apos;m Marlon, a Bachelor of Science in Information
-          Technology graduate with experience as a full-stack developer. After
-          enriching my skills during an internship at Accenture Inc., I&apos;ve
-          continued to grow professionally by working on diverse web and mobile
-          development projects, both personal and freelance. I&apos;m currently
-          expanding my expertise into the field of artificial intelligence,
-          eager to integrate AI solutions into my development work. Passionate
-          about coding and always seeking new challenges, I thrive on learning
-          coding and always seeking new challenges, I thrive on learning and
-          professional growth. In addition to development, I enjoy content
-          creation and gaming, staying up-to-date with the latest industry
-          trends. In my free time, you&apos;ll often find me playing online
-          multiplayer games or exploring emerging technologies. I&apos;m excited
-          to bring my skills and enthusiasm to a dynamic team where I can
-          contribute and continue to evolve in the tech industry.
-        </p>
-      </motion.div>
-    </div>
+          {/* Content Column */}
+          <motion.div
+            className="md:col-span-7 lg:col-span-8 space-y-6"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            <div className="space-y-2">
+              <h3 className="text-2xl sm:text-3xl font-bold text-[#00255e]">
+                Marlon Gacrama Jr
+              </h3>
+              <p className="text-[#CB890D] font-medium">
+                Full Stack Developer & Tech Enthusiast
+              </p>
+            </div>
+
+            <div className="space-y-4 text-gray-600">
+              <p>
+                Hi, I&apos;m Marlon — a BS Information Technology graduate and
+                full-stack developer with hands-on experience in web and mobile
+                projects. I started my journey with an internship at Accenture
+                Inc., where I built automation solutions, and have since grown
+                through freelance and personal projects that strengthened my
+                skills in Next.js, React, Firebase, and more.
+              </p>
+
+              <div className="py-2">
+                <div className="h-px bg-gradient-to-r from-[#00255e]/5 via-[#00255e]/20 to-[#00255e]/5" />
+              </div>
+
+              <p>
+                I&apos;m currently expanding into artificial intelligence,
+                aiming to integrate smart AI solutions into real-world
+                applications. I enjoy tackling challenges, learning new
+                technologies, and turning ideas into functional, user-friendly
+                products.
+              </p>
+
+              <p>
+                Outside of coding, I&apos;m into content creation, Nintendo
+                games, and keeping up with the latest tech and gaming trends.
+                Whether it&apos;s building apps, solving problems, or exploring
+                emerging technologies, I&apos;m always excited to grow and
+                contribute to dynamic teams in the tech industry.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
   );
 };
 

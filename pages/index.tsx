@@ -12,22 +12,22 @@ import AIChatWidget from "../components/chat";
 
 export default function Home() {
   return (
-    <div className=" h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-[#00255e]/20 scrollbar-thumb-[#D6A23F]/100">
+    <div className="overflow-x-hidden z-0 scrollbar scrollbar-track-[#00255e]/20 scrollbar-thumb-[#D6A23F]/100">
       <Head>
         <title>Marlon G. Portfolio</title>
       </Head>
 
       <Header />
 
-      <section id="hero" className="snap-start">
+      <section id="hero">
         <Hero />
       </section>
 
-      <section id="about" className="snap-center">
+      <section id="about">
         <About />
       </section>
 
-      <section id="experience" className="snap-center">
+      <section id="experience">
         <Experience
           company={{
             id: 0,
@@ -41,20 +41,15 @@ export default function Home() {
         />
       </section>
 
-      <section id="skills" className="snap-start">
-        <Skills
-          techStack={{
-            title: "",
-            image: "",
-          }}
-        />
+      <section id="skills">
+        <Skills />
       </section>
 
-      <section id="projects" className="snap-start">
+      <section id="projects">
         <Projects />
       </section>
 
-      <section id="contact" className="snap-start">
+      <section id="contact">
         <Contact />
       </section>
 
