@@ -28,17 +28,7 @@ export default function Home() {
       </section>
 
       <section id="experience">
-        <Experience
-          company={{
-            id: 0,
-            picture: "",
-            position: "",
-            companyName: "",
-            techUsed: [],
-            startedEnd: "",
-            workLoad: [],
-          }}
-        />
+        <Experience />
       </section>
 
       <section id="skills">

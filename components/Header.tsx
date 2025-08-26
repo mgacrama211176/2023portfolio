@@ -2,11 +2,8 @@ import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import { BsPerson } from "react-icons/bs";
-import Link from "next/link";
 
-type Props = {};
-
-const Header = (props: Props) => {
+const Header = () => {
   return (
     <header className="flex flex-col md:flex-row items-start justify-between w-full  z-20 xl:items-center p-1">
       {/* SOCIAL ICONS */}

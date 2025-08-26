@@ -1,39 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-
-// Separate data into two clear sets
-const innerCircleSkills = [
-  { title: "HTML5", image: "/Skills/html5.png" },
-  { title: "CSS3", image: "/Skills/css.png" },
-  { title: "javascript", image: "/Skills/js.png" },
-  { title: "ReactJS", image: "/Skills/react.png" },
-  { title: "NextJS", image: "/Skills/next.jpeg" },
-  { title: "tailwind", image: "/Skills/tailwind.png" },
-  { title: "styled", image: "/Skills/styled.png" },
-  { title: "Figma", image: "/Skills/figma.png" },
-  { title: "XD", image: "/Skills/xd.png" },
-  { title: "canva", image: "/Skills/canva.png" },
-];
-
-const outerCircleSkills = [
-  { title: "Express", image: "/Skills/express.png" },
-  { title: "Serverless", image: "/Skills/serverless.png" },
-  { title: "NodeJS", image: "/Skills/node.webp" },
-  { title: "MongoDB", image: "/Skills/mongodb.gif" },
-  { title: "Firebase", image: "/Skills/firebase.png" },
-  { title: "Supabase", image: "/Skills/supabase.png" },
-  { title: "mysql", image: "/Skills/mysql.png" },
-  { title: "AWS", image: "/Skills/aws.png" },
-  { title: "Expo", image: "/Skills/expo.png" },
-  { title: "Php", image: "/Skills/php.png" },
-  { title: "Python", image: "/Skills/python.png" },
-  { title: "Selenium", image: "/Skills/selenium.png" },
-  { title: "Salseforce", image: "/Skills/salesforce.jpeg" },
-  { title: "github", image: "/Skills/github.png" },
-  { title: "AI", image: "/Skills/openAI.png" },
-  { title: "Monday.com", image: "/Skills/monday.webp" },
-];
+import { innerCircleSkills, outerCircleSkills } from "./data";
 
 // Reusable skill icon component
 const SkillIcon = ({

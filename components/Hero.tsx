@@ -3,9 +3,10 @@ import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import Image from "next/image";
 import Link from "next/link";
+import { navigationOptions } from "./data";
 
 const Hero = () => {
-  const [main, count] = useTypewriter({
+  const [main] = useTypewriter({
     words: [
       "Hi! I'm Marlon G. 🙋‍♂️",
       "Youtube Content Creator 🎥",
@@ -18,29 +19,6 @@ const Hero = () => {
   const myLoader = ({ src, width, quality }: any) => {
     return `${src}?w=${width}&q=${quality || 100}`;
   };
-
-  const navigationOptions = [
-    {
-      title: "About",
-      href: "#about",
-    },
-    {
-      title: "Experience",
-      href: "#experience",
-    },
-    {
-      title: "Skills",
-      href: "#skills",
-    },
-    {
-      title: "Projects",
-      href: "#projects",
-    },
-    {
-      title: "Contact",
-      href: "#contact",
-    },
-  ];
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center text-center overflow-hidden text-white z-0 px-3 sm:px-8 py-10">

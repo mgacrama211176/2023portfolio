@@ -2,9 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 
-type Props = {};
-
-const About = (props: Props) => {
+const About = () => {
   const myLoader = ({ src, width, quality }: any) => {
     return `${src}?w=${width}&q=${quality || 100}`;
   };
