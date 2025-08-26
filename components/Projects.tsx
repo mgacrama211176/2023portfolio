@@ -16,7 +16,7 @@ const projects: Project[] = [
   {
     title: "Gether",
     about:
-      "A social media platform that connects people with similar interests. Features include real-time chat, post sharing, and event organization.",
+      "Gether is a dedicated social media platform designed for gamers to connect, communicate, and collaborate with others who share the same interests and playstyle. With streamlined features such as real-time chat, post sharing, and event organization, the app makes it easy for gamers to find like-minded players, build communities, and create meaningful gaming experiences together.",
     image: "/Projects/getherPNG.png",
     source: "https://github.com/marlonlongm/gether-app",
     demo: "https://gether-app.vercel.app/",
@@ -32,7 +32,7 @@ const projects: Project[] = [
   {
     title: "FilAnime",
     about:
-      "An anime streaming platform with a vast collection of anime series and movies. Features include user recommendations and watchlist management.",
+      "FilAnime is a platform that blends social media, streaming, and networking for animators and anime enthusiasts. It gives artists a space to showcase their work, gain visibility, and connect with others in the industry. Employers can easily discover talented animators, while the community fosters collaboration through sharing, feedback, and creative exchange.",
     image: "/Projects/filanime.png",
     source: "https://github.com/marlonlongm/filanime-app",
     demo: "https://filanime.vercel.app/",
@@ -48,7 +48,7 @@ const projects: Project[] = [
   {
     title: "E-Loan",
     about:
-      "A comprehensive loan management system for financial institutions. Includes features for loan application, approval workflow, and payment tracking.",
+      "E-Loan is a comprehensive loan management system designed for financial institutions to streamline their lending operations. It provides tools for loan application, approval workflows, and payment tracking, ensuring efficiency and accuracy at every stage. With user-friendly features and secure data handling, E-Loan helps institutions improve client experience, simplify processes, and maintain better financial oversight.",
     image: "/Projects/E-Loan.png",
     source: "https://github.com/marlonlongm/e-loan",
     demo: "https://e-loan.vercel.app/",
@@ -64,9 +64,9 @@ const projects: Project[] = [
   {
     title: "DM-TAS",
     about:
-      "A task automation system for document management. Streamlines workflow processes and enhances productivity through automated document handling.",
+      "DM-TAS is the official website for Document Management Tasmania, showcasing a range of business services and solutions. The site presents offerings such as multifunction printers, workflow digitisation, digital printing (e.g., business cards, brochures), signage, embedded partnerships for process integration, and custom jigsaw puzzles, all designed to empower organizations with efficient, scalable, and integrated document and media services.",
     image: "/Projects/DMtas.png",
-    source: "https://github.com/marlonlongm/dm-tas",
+    source: "",
     demo: "https://dm-tas.vercel.app/",
     technologies: [
       { title: "Next.js", image: "/Skills/next.jpeg" },
@@ -80,31 +80,26 @@ const projects: Project[] = [
   {
     title: "Talpakan",
     about:
-      "An online gaming platform focused on strategic gameplay. Features include real-time multiplayer matches and leaderboard systems.",
+      "Talpakan is a retro-style game for two players, each commanding a chicken in a fast-paced duel. Gameplay involves strategic attacks, random chance bonuses or penalties, and the first to defeat the opponent’s chicken wins. This game delivers nostalgic charm with competitive mechanics, making every match both unpredictable and thrilling.",
     image: "/Projects/talpakan.png",
     source: "https://github.com/marlonlongm/talpakan",
     demo: "https://talpakan.vercel.app/",
     technologies: [
-      { title: "Next.js", image: "/Skills/next.jpeg" },
-      { title: "React", image: "/Skills/react.png" },
-      { title: "Node.js", image: "/Skills/node.webp" },
-      { title: "MongoDB", image: "/Skills/mongodb.gif" },
-      { title: "Tailwind CSS", image: "/Skills/tailwind.png" },
-      { title: "TypeScript", image: "/Skills/js.png" },
+      { title: "html5", image: "/Skills/html5.png" },
+      { title: "css", image: "/Skills/css.png" },
+      { title: "javascript", image: "/Skills/js.png" },
     ],
   },
   {
     title: "Creators Value",
     about:
-      "An online gaming platform focused on strategic gameplay. Features include real-time multiplayer matches and leaderboard systems.",
-    image: "/Projects/talpakan.png",
-    source: "https://github.com/marlonlongm/talpakan",
-    demo: "https://talpakan.vercel.app/",
+      "Creators Value is a comprehensive online platform offering tailored services—such as editing, publishing, branding, marketing, web and app development, and visual content creation—for creators, authors, and business owners. Its goal is to empower visionaries to amplify their digital presence and bring their creative ideas to life with expert support and innovative solutions.",
+    image: "/Projects/cv.png",
+    source: "",
+    demo: "https://www.creatorsvalue.com/",
     technologies: [
       { title: "Next.js", image: "/Skills/next.jpeg" },
-      { title: "React", image: "/Skills/react.png" },
       { title: "Node.js", image: "/Skills/node.webp" },
-      { title: "MongoDB", image: "/Skills/mongodb.gif" },
       { title: "Tailwind CSS", image: "/Skills/tailwind.png" },
       { title: "TypeScript", image: "/Skills/js.png" },
     ],
@@ -112,15 +107,15 @@ const projects: Project[] = [
   {
     title: "Featbooks",
     about:
-      "An online gaming platform focused on strategic gameplay. Features include real-time multiplayer matches and leaderboard systems.",
-    image: "/Projects/talpakan.png",
-    source: "https://github.com/marlonlongm/talpakan",
-    demo: "https://talpakan.vercel.app/",
+      "Feat Books is a digital publishing and marketing platform for authors, content creators, and storytellers. It delivers expert editing, custom book design, strategic marketing, and comprehensive self-publishing support—empowering creators to share their stories and connect meaningfully with audiences, all while retaining full control over their work. ",
+    image: "/Projects/fb.png",
+    source: "",
+    demo: "https://www.featbooks.com/",
     technologies: [
       { title: "Next.js", image: "/Skills/next.jpeg" },
-      { title: "React", image: "/Skills/react.png" },
       { title: "Node.js", image: "/Skills/node.webp" },
       { title: "MongoDB", image: "/Skills/mongodb.gif" },
+      { title: "AWS", image: "/Skills/aws.png" },
       { title: "Tailwind CSS", image: "/Skills/tailwind.png" },
       { title: "TypeScript", image: "/Skills/js.png" },
     ],
@@ -128,15 +123,15 @@ const projects: Project[] = [
   {
     title: "Rod Martin",
     about:
-      "An online gaming platform focused on strategic gameplay. Features include real-time multiplayer matches and leaderboard systems.",
-    image: "/Projects/talpakan.png",
-    source: "https://github.com/marlonlongm/talpakan",
-    demo: "https://talpakan.vercel.app/",
+      "A personal website for Rod Martin—an inspiring artist, poet, musician, and storyteller. Visitors can enjoy his latest music via a dynamic MP3 player, explore his poems and published books, and engage with creative content like TikTok Tuesday (bite-sized poetry, quirky characters, musical moments) and Weekend Poetry, offering reflective original verses. Inspired by his Hawaii roots, Rod blends heartfelt storytelling with melody, authenticity, and a playful creative spirit.",
+    image: "/Projects/rd.png",
+    source: "",
+    demo: "https://rods-website.vercel.app/",
     technologies: [
       { title: "Next.js", image: "/Skills/next.jpeg" },
-      { title: "React", image: "/Skills/react.png" },
       { title: "Node.js", image: "/Skills/node.webp" },
       { title: "MongoDB", image: "/Skills/mongodb.gif" },
+      { title: "AWS", image: "/Skills/aws.png" },
       { title: "Tailwind CSS", image: "/Skills/tailwind.png" },
       { title: "TypeScript", image: "/Skills/js.png" },
     ],
@@ -144,10 +139,27 @@ const projects: Project[] = [
   {
     title: "Tasks Masters Group",
     about:
-      "An online gaming platform focused on strategic gameplay. Features include real-time multiplayer matches and leaderboard systems.",
-    image: "/Projects/talpakan.png",
-    source: "https://github.com/marlonlongm/talpakan",
-    demo: "https://talpakan.vercel.app/",
+      "Task Masters Group is an ethical virtual assistance agency connecting businesses with skilled, reliable, and fair-paid virtual assistants from the Philippines. Offering customizable support—such as logistics, admin, accounting, customer service, and lead generation—clients benefit from efficient talent paired with transparent processes. Their hands-on approach includes candidate selection, interviewing, smooth onboarding, and structured training, ensuring long-term, productive partnerships. ",
+    image: "/Projects/TMG.png",
+    source: "",
+    demo: "https://www.taskmastergroup.com/",
+    technologies: [
+      { title: "Next.js", image: "/Skills/next.jpeg" },
+      { title: "React", image: "/Skills/react.png" },
+      { title: "Node.js", image: "/Skills/node.webp" },
+      { title: "MongoDB", image: "/Skills/mongodb.gif" },
+      { title: "Tailwind CSS", image: "/Skills/tailwind.png" },
+      { title: "TypeScript", image: "/Skills/js.png" },
+      { title: "Monday.com", image: "/Skills/monday.webp" },
+    ],
+  },
+  {
+    title: "Jet's Pizza Coupon App",
+    about:
+      "A dedicated internal tool designed for store managers at Jet’s Pizza, the Coupon App allows seamless creation, tracking, and management of promotional coupons. Key features include generating customized coupons for loyal customers, monitoring best-selling pizzas, and reviewing shop performance through detailed sales and usage statistics—all in a unified dashboard that enhances promotional efficiency and decision-making.",
+    image: "/Projects/jets.png",
+    source: "",
+    demo: "https://pizza-guy.vercel.app/",
     technologies: [
       { title: "Next.js", image: "/Skills/next.jpeg" },
       { title: "React", image: "/Skills/react.png" },
@@ -158,12 +170,12 @@ const projects: Project[] = [
     ],
   },
   {
-    title: "Jet's Pizza",
+    title: "ISA Construction",
     about:
-      "An online gaming platform focused on strategic gameplay. Features include real-time multiplayer matches and leaderboard systems.",
-    image: "/Projects/talpakan.png",
-    source: "https://github.com/marlonlongm/talpakan",
-    demo: "https://talpakan.vercel.app/",
+      "ISA Construction & Development Corp. is a Manila-based engineering and construction company specializing in road and vertical construction, architectural design, consulting, and cost estimation. Featured projects include a coastal highway extension and commercial developments. The firm emphasizes quality, integrity, and innovation, backed by ISO 9001 certification and strong leadership focused on community impact and structural excellence. ",
+    image: "/Projects/isacondev.png",
+    source: "",
+    demo: "https://isacondev.com/",
     technologies: [
       { title: "Next.js", image: "/Skills/next.jpeg" },
       { title: "React", image: "/Skills/react.png" },
@@ -196,7 +208,7 @@ const TechBadge = ({
         alt={tech.title}
         width={32}
         height={32}
-        className="w-full h-full object-contain p-1.5 filter brightness-90 group-hover:brightness-110"
+        className="w-full h-full object-cover p-1.5 filter brightness-90 group-hover:brightness-110"
       />
     </div>
   </motion.div>
@@ -261,7 +273,7 @@ const ProjectCard = ({
       </div>
 
       {/* Action Buttons */}
-      <div className="flex gap-3">
+      <div className="flex gap-3 items-center justify-center">
         {project.source && (
           <a
             href={project.source}

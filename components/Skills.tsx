@@ -32,6 +32,7 @@ const outerCircleSkills = [
   { title: "Salseforce", image: "/Skills/salesforce.jpeg" },
   { title: "github", image: "/Skills/github.png" },
   { title: "AI", image: "/Skills/openAI.png" },
+  { title: "Monday.com", image: "/Skills/monday.webp" },
 ];
 
 // Reusable skill icon component
@@ -48,12 +49,7 @@ const SkillIcon = ({
     className={`${size} bg-white/80 rounded-full backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300`}
     whileHover={{ scale: 1.3 }}
   >
-    <Image
-      src={src}
-      alt={alt}
-      fill
-      className="rounded-full object-contain p-1.5"
-    />
+    <Image src={src} alt={alt} fill className="rounded-full object-cover " />
   </motion.div>
 );
 

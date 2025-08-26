@@ -236,7 +236,7 @@ const Experience = (props: Props) => {
                               alt="Technology"
                               width={50}
                               height={50}
-                              className="w-full h-full object-contain rounded-full "
+                              className="w-full h-full object-cover rounded-full "
                             />
                           </motion.div>
                         ))}
