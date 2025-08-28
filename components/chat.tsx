@@ -10,7 +10,7 @@ interface Message {
 const AIChatWidget: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
-      content: "Hello, want to know more about me?",
+      content: "Hi! You can ask me about Marlon!",
       role: "assistant",
       timestamp: new Date(),
     },
@@ -70,7 +70,7 @@ const AIChatWidget: React.FC = () => {
   console.log(messages);
 
   return (
-    <>
+    <div>
       <div
         className={`fixed bottom-4 right-4 transition-all duration-300 ease-in-out z-50 ${
           isOpen
@@ -155,7 +155,7 @@ const AIChatWidget: React.FC = () => {
       >
         <ChatBubbleLeftEllipsisIcon className="size-6" />
       </button>
-    </>
+    </div>
   );
 };
 

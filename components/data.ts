@@ -298,7 +298,7 @@ export const innerCircleSkills = [
 export const outerCircleSkills = [
   { title: "Express", image: "/Skills/express.png" },
   { title: "Serverless", image: "/Skills/serverless.png" },
-  { title: "NodeJS", image: "/Skills/node.webp" },
+  { title: "NodeJS", image: "/Skills/node.png" },
   { title: "MongoDB", image: "/Skills/mongodb.gif" },
   { title: "Firebase", image: "/Skills/firebase.png" },
   { title: "Supabase", image: "/Skills/supabase.png" },
