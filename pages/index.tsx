@@ -51,7 +51,7 @@ export default function Home() {
         </footer>
       </Link>
 
-      <AIChatWidget />
+      {/* <AIChatWidget /> */}
     </div>
   );
 }
