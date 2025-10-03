@@ -1,44 +1,73 @@
-import React from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { innerCircleSkills, outerCircleSkills } from "./data";
 
-// Reusable skill icon component
-const SkillIcon = ({
-  src,
-  alt,
-  size,
-}: {
+// Types for better type safety (SOLID - Interface Segregation)
+interface SkillIconProps {
   src: string;
   alt: string;
   size: string;
-}) => (
+}
+
+interface RotatingCircleProps {
+  skills: typeof innerCircleSkills;
+  radius: number;
+  direction: number;
+  duration: number;
+  iconSize: string;
+}
+
+interface SkillPosition {
+  x: number;
+  y: number;
+  angle: number;
+}
+
+// Reusable skill icon component (DRY - Single Responsibility)
+const SkillIcon = ({ src, alt, size }: SkillIconProps) => (
   <motion.div
-    className={`${size} bg-white/80 rounded-full backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300`}
+    className={`${size} bg-white/80 rounded-full backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 relative`}
     whileHover={{ scale: 1.3 }}
   >
-    <Image src={src} alt={alt} fill className="rounded-full object-cover " />
+    <Image
+      src={src}
+      alt={alt}
+      fill
+      className="rounded-full object-cover"
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+    />
   </motion.div>
 );
 
-// Reusable rotating circle component
+// Utility function for calculating positions (DRY - Don't Repeat Yourself)
+const calculateSkillPositions = (
+  skillsLength: number,
+  radius: number
+): SkillPosition[] => {
+  return Array.from({ length: skillsLength }, (_, index) => {
+    const angle = (index / skillsLength) * Math.PI * 2;
+    return {
+      x: Math.cos(angle) * radius,
+      y: Math.sin(angle) * radius,
+      angle,
+    };
+  });
+};
+
+// Reusable rotating circle component (SOLID - Single Responsibility)
 const RotatingCircle = ({
   skills,
   radius,
   direction,
   duration,
   iconSize,
-}: {
-  skills: typeof innerCircleSkills;
-  radius: number;
-  direction: number;
-  duration: number;
-  iconSize: string;
-}) => {
-  // Extract numeric size from className for centering calculation
-  const sizeMatch = iconSize.match(/w-(\d+)/);
-  const baseSize = sizeMatch ? parseInt(sizeMatch[1]) * 4 : 32; // Convert Tailwind units to pixels
-  const offset = baseSize / 2;
+}: RotatingCircleProps) => {
+  // Memoize positions to prevent recalculation (KISS - Keep It Simple)
+  const positions = useMemo(
+    () => calculateSkillPositions(skills.length, radius),
+    [skills.length, radius]
+  );
 
   return (
     <motion.div
@@ -51,9 +80,7 @@ const RotatingCircle = ({
       }}
     >
       {skills.map((skill, index) => {
-        const angle = (index / skills.length) * Math.PI * 2;
-        const x = Math.cos(angle) * radius;
-        const y = Math.sin(angle) * radius;
+        const { x, y } = positions[index];
 
         return (
           <motion.div
@@ -82,42 +109,72 @@ const RotatingCircle = ({
   );
 };
 
+// Configuration constants (KISS - Keep It Simple)
+const SKILLS_CONFIG = {
+  container:
+    "w-[800px] h-[800px] sm:w-[800px] sm:h-[800px] md:w-[800px] md:h-[800px] lg:w-[800px] lg:h-[800px]",
+  innerRadius: 200,
+  outerRadius: 300,
+  innerIconSize: "w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-16 lg:h-16",
+  outerIconSize: "w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-16 lg:h-16",
+  innerDuration: 30,
+  outerDuration: 35,
+} as const;
+
+// Loading skeleton component (DRY - Reusable)
+const LoadingSkeleton = () => (
+  <div className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <div className={`relative ${SKILLS_CONFIG.container}`}>
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+        <div className="uppercase tracking-[8px] sm:tracking-[15px] text-xl sm:text-2xl md:text-3xl text-[#CB890D] text-center bg-white/50 backdrop-blur-sm rounded-full h-32 w-32 sm:h-32 sm:w-32 md:h-32 md:w-32 flex items-center justify-center">
+          Tech Skill
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+// Center text component (SOLID - Single Responsibility)
+const CenterText = () => (
+  <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+    <div className="uppercase tracking-[8px] sm:tracking-[15px] text-xl sm:text-2xl md:text-3xl text-[#CB890D] text-center bg-white/50 backdrop-blur-sm rounded-full h-32 w-32 sm:h-32 sm:w-32 md:h-32 md:w-32 flex items-center justify-center">
+      Tech Skill
+    </div>
+  </div>
+);
+
+// Main Skills component (SOLID - Open/Closed Principle)
 const Skills = () => {
-  const sizes = {
-    container:
-      "w-[800px] h-[800px] sm:w-[800px] sm:h-[800px] md:w-[800px] md:h-[800px] lg:w-[800px] lg:h-[800px]",
-    innerRadius: { mobile: 150, tablet: 150, desktop: 200 },
-    outerRadius: { mobile: 300, tablet: 300, desktop: 300 },
-    innerIconSize: "w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-16 lg:h-16",
-    outerIconSize: "w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-16 lg:h-16",
-  };
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  // Show loading skeleton during hydration (KISS - Keep It Simple)
+  if (!isMounted) {
+    return <LoadingSkeleton />;
+  }
 
   return (
     <div className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className={`relative ${sizes.container}`}>
-        {/* Static Center Text */}
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
-          <div className="uppercase tracking-[8px] sm:tracking-[15px] text-xl sm:text-2xl md:text-3xl text-[#CB890D] text-center bg-white/50 backdrop-blur-sm rounded-full h-32 w-32 sm:h-32 sm:w-32 md:h-32 md:w-32 flex items-center justify-center">
-            Tech Skill
-          </div>
-        </div>
+      <div className={`relative ${SKILLS_CONFIG.container}`}>
+        <CenterText />
 
-        {/* Inner Circle */}
         <RotatingCircle
           skills={innerCircleSkills}
-          radius={sizes.innerRadius.desktop}
+          radius={SKILLS_CONFIG.innerRadius}
           direction={1}
-          duration={30}
-          iconSize={sizes.innerIconSize}
+          duration={SKILLS_CONFIG.innerDuration}
+          iconSize={SKILLS_CONFIG.innerIconSize}
         />
 
-        {/* Outer Circle */}
         <RotatingCircle
           skills={outerCircleSkills}
-          radius={sizes.outerRadius.desktop}
+          radius={SKILLS_CONFIG.outerRadius}
           direction={-1}
-          duration={35}
-          iconSize={sizes.outerIconSize}
+          duration={SKILLS_CONFIG.outerDuration}
+          iconSize={SKILLS_CONFIG.outerIconSize}
         />
       </div>
     </div>

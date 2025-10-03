@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { SocialIcon } from "react-social-icons";
 import { projects } from "./data";
 import { Project } from "./types";
+import Link from "next/link";
+
+import { IoShareSocial } from "react-icons/io5";
+import { SlSocialGithub } from "react-icons/sl";
 
 const TechBadge = ({
   tech,
@@ -49,7 +52,8 @@ const ProjectCard = ({
       <Image
         src={project.image}
         alt={project.title}
-        fill
+        width={500}
+        height={500}
         className="object-cover transform transition-transform duration-500 group-hover:scale-105"
         priority
       />
@@ -85,36 +89,20 @@ const ProjectCard = ({
       {/* Actions */}
       <div className="flex gap-3 pt-4 border-t border-gray-100 items-center justify-center">
         {project.source && (
-          <a
-            href={project.source}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors duration-300"
-          >
-            <SocialIcon
-              url={project.source}
-              className="!h-4 !w-4"
-              fgColor="currentColor"
-              bgColor="transparent"
-            />
-            Source
-          </a>
+          <Link href={project.source} target="_blank" rel="noopener noreferrer">
+            <div className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors duration-300">
+              <SlSocialGithub className="h-4 w-4" color="currentColor" />
+              <span>Source</span>
+            </div>
+          </Link>
         )}
         {project.demo && (
-          <a
-            href={project.demo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-[#00255e] hover:bg-[#00255e]/90 rounded-lg transition-colors duration-300"
-          >
-            <SocialIcon
-              url={project.demo}
-              className="!h-4 !w-4"
-              fgColor="currentColor"
-              bgColor="transparent"
-            />
-            Live Demo
-          </a>
+          <Link href={project.demo} target="_blank" rel="noopener noreferrer">
+            <div className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-[#00255e] hover:bg-[#00255e]/90 rounded-lg transition-colors duration-300">
+              <IoShareSocial className="h-4 w-4" color="currentColor" />
+              <span>Live Demo</span>
+            </div>
+          </Link>
         )}
       </div>
     </div>

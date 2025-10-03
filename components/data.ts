@@ -2,80 +2,19 @@ import { Project, Experiences } from "./types";
 
 export const projects: Project[] = [
   {
-    title: "Gether",
+    title: "ISA Construction",
     about:
-      "Gether is a dedicated social media platform designed for gamers to connect, communicate, and collaborate with others who share the same interests and playstyle. With streamlined features such as real-time chat, post sharing, and event organization, the app makes it easy for gamers to find like-minded players, build communities, and create meaningful gaming experiences together.",
-    image: "/Projects/getherPNG.png",
-    source: "https://github.com/marlonlongm/gether-app",
-    demo: "https://gether-app.vercel.app/",
-    technologies: [
-      { title: "Next.js", image: "/Skills/next.jpeg" },
-      { title: "React", image: "/Skills/react.png" },
-      { title: "Node.js", image: "/Skills/node.webp" },
-      { title: "MongoDB", image: "/Skills/mongodb.gif" },
-      { title: "Tailwind CSS", image: "/Skills/tailwind.png" },
-      { title: "TypeScript", image: "/Skills/js.png" },
-    ],
-  },
-  {
-    title: "FilAnime",
-    about:
-      "FilAnime is a platform that blends social media, streaming, and networking for animators and anime enthusiasts. It gives artists a space to showcase their work, gain visibility, and connect with others in the industry. Employers can easily discover talented animators, while the community fosters collaboration through sharing, feedback, and creative exchange.",
-    image: "/Projects/filanime.png",
-    source: "https://github.com/marlonlongm/filanime-app",
-    demo: "https://filanime.vercel.app/",
-    technologies: [
-      { title: "Next.js", image: "/Skills/next.jpeg" },
-      { title: "React", image: "/Skills/react.png" },
-      { title: "Node.js", image: "/Skills/node.webp" },
-      { title: "MongoDB", image: "/Skills/mongodb.gif" },
-      { title: "Tailwind CSS", image: "/Skills/tailwind.png" },
-      { title: "TypeScript", image: "/Skills/js.png" },
-    ],
-  },
-  {
-    title: "E-Loan",
-    about:
-      "E-Loan is a comprehensive loan management system designed for financial institutions to streamline their lending operations. It provides tools for loan application, approval workflows, and payment tracking, ensuring efficiency and accuracy at every stage. With user-friendly features and secure data handling, E-Loan helps institutions improve client experience, simplify processes, and maintain better financial oversight.",
-    image: "/Projects/E-Loan.png",
-    source: "https://github.com/marlonlongm/e-loan",
-    demo: "https://e-loan.vercel.app/",
-    technologies: [
-      { title: "Next.js", image: "/Skills/next.jpeg" },
-      { title: "React", image: "/Skills/react.png" },
-      { title: "Node.js", image: "/Skills/node.webp" },
-      { title: "MongoDB", image: "/Skills/mongodb.gif" },
-      { title: "Tailwind CSS", image: "/Skills/tailwind.png" },
-      { title: "TypeScript", image: "/Skills/js.png" },
-    ],
-  },
-  {
-    title: "DM-TAS",
-    about:
-      "A comprehensive solutions provider for businesses, DM-TAS delivers digital multifunction printing, document digitisation, signage, graphic design, and embedded process integration. With end-to-end services tailored for efficiency and visibility, the company empowers organizations to streamline workflows, enhance productivity, and elevate their document and media needs.  ",
-    image: "/Projects/DMtas.png",
+      "ISA Construction & Development Corp. delivers excellence in road and vertical construction, design, consulting, and cost estimation. With experienced leadership, ISO quality standards, and notable projects like the coastal highway extension, the firm offers innovative, reliable, and transparent engineering solutions.",
+    image: "/Projects/isacondev.png",
     source: "",
-    demo: "https://dm-tas.vercel.app/",
+    demo: "https://isacondev.com/",
     technologies: [
       { title: "Next.js", image: "/Skills/next.jpeg" },
       { title: "React", image: "/Skills/react.png" },
-      { title: "Node.js", image: "/Skills/node.webp" },
+      { title: "Node.js", image: "/Skills/node.png" },
       { title: "MongoDB", image: "/Skills/mongodb.gif" },
       { title: "Tailwind CSS", image: "/Skills/tailwind.png" },
       { title: "TypeScript", image: "/Skills/js.png" },
-    ],
-  },
-  {
-    title: "Talpakan",
-    about:
-      "Talpakan is a retro-style game for two players, each commanding a chicken in a fast-paced duel. Gameplay involves strategic attacks, random chance bonuses or penalties, and the first to defeat the opponent’s chicken wins. This game delivers nostalgic charm with competitive mechanics, making every match both unpredictable and thrilling.",
-    image: "/Projects/talpakan.png",
-    source: "https://github.com/marlonlongm/talpakan",
-    demo: "https://talpakan.vercel.app/",
-    technologies: [
-      { title: "html5", image: "/Skills/html5.png" },
-      { title: "css", image: "/Skills/css.png" },
-      { title: "javascript", image: "/Skills/js.png" },
     ],
   },
   {
@@ -87,7 +26,7 @@ export const projects: Project[] = [
     demo: "https://www.creatorsvalue.com/",
     technologies: [
       { title: "Next.js", image: "/Skills/next.jpeg" },
-      { title: "Node.js", image: "/Skills/node.webp" },
+      { title: "Node.js", image: "/Skills/node.png" },
       { title: "Tailwind CSS", image: "/Skills/tailwind.png" },
       { title: "TypeScript", image: "/Skills/js.png" },
     ],
@@ -101,7 +40,7 @@ export const projects: Project[] = [
     demo: "https://www.featbooks.com/",
     technologies: [
       { title: "Next.js", image: "/Skills/next.jpeg" },
-      { title: "Node.js", image: "/Skills/node.webp" },
+      { title: "Node.js", image: "/Skills/node.png" },
       { title: "MongoDB", image: "/Skills/mongodb.gif" },
       { title: "AWS", image: "/Skills/aws.png" },
       { title: "Tailwind CSS", image: "/Skills/tailwind.png" },
@@ -117,7 +56,7 @@ export const projects: Project[] = [
     demo: "https://rods-website.vercel.app/",
     technologies: [
       { title: "Next.js", image: "/Skills/next.jpeg" },
-      { title: "Node.js", image: "/Skills/node.webp" },
+      { title: "Node.js", image: "/Skills/node.png" },
       { title: "MongoDB", image: "/Skills/mongodb.gif" },
       { title: "AWS", image: "/Skills/aws.png" },
       { title: "Tailwind CSS", image: "/Skills/tailwind.png" },
@@ -134,7 +73,7 @@ export const projects: Project[] = [
     technologies: [
       { title: "Next.js", image: "/Skills/next.jpeg" },
       { title: "React", image: "/Skills/react.png" },
-      { title: "Node.js", image: "/Skills/node.webp" },
+      { title: "Node.js", image: "/Skills/node.png" },
       { title: "MongoDB", image: "/Skills/mongodb.gif" },
       { title: "Tailwind CSS", image: "/Skills/tailwind.png" },
       { title: "TypeScript", image: "/Skills/js.png" },
@@ -142,32 +81,94 @@ export const projects: Project[] = [
     ],
   },
   {
-    title: "Jet's Pizza Coupon App",
+    title: "Gether",
     about:
-      "An internal tool for Jet’s Pizza managers to create and track promotional coupons, monitor bestselling pizzas, and view shop performance via detailed statistics—all within a unified dashboard designed to streamline marketing and management.",
-    image: "/Projects/jets.png",
-    source: "",
-    demo: "https://pizza-guy.vercel.app/",
+      "Gether is a dedicated social media platform designed for gamers to connect, communicate, and collaborate with others who share the same interests and playstyle. With streamlined features such as real-time chat, post sharing, and event organization, the app makes it easy for gamers to find like-minded players, build communities, and create meaningful gaming experiences together.",
+    image: "/Projects/getherPNG.png",
+    source: "https://github.com/mgacrama211176/getHerFront",
+    demo: "https://getherapp-six.vercel.app/",
     technologies: [
       { title: "Next.js", image: "/Skills/next.jpeg" },
       { title: "React", image: "/Skills/react.png" },
-      { title: "Node.js", image: "/Skills/node.webp" },
+      { title: "Node.js", image: "/Skills/node.png" },
       { title: "MongoDB", image: "/Skills/mongodb.gif" },
       { title: "Tailwind CSS", image: "/Skills/tailwind.png" },
       { title: "TypeScript", image: "/Skills/js.png" },
     ],
   },
   {
-    title: "ISA Construction",
+    title: "FilAnime",
     about:
-      "ISA Construction & Development Corp. delivers excellence in road and vertical construction, design, consulting, and cost estimation. With experienced leadership, ISO quality standards, and notable projects like the coastal highway extension, the firm offers innovative, reliable, and transparent engineering solutions.",
-    image: "/Projects/isacondev.png",
-    source: "",
-    demo: "https://isacondev.com/",
+      "FilAnime is a platform that blends social media, streaming, and networking for animators and anime enthusiasts. It gives artists a space to showcase their work, gain visibility, and connect with others in the industry. Employers can easily discover talented animators, while the community fosters collaboration through sharing, feedback, and creative exchange.",
+    image: "/Projects/filanime.png",
+    source: "https://github.com/mgacrama211176/capsFront",
+    demo: "https://filanime.vercel.app/",
     technologies: [
       { title: "Next.js", image: "/Skills/next.jpeg" },
       { title: "React", image: "/Skills/react.png" },
-      { title: "Node.js", image: "/Skills/node.webp" },
+      { title: "Node.js", image: "/Skills/node.png" },
+      { title: "MongoDB", image: "/Skills/mongodb.gif" },
+      { title: "Tailwind CSS", image: "/Skills/tailwind.png" },
+      { title: "TypeScript", image: "/Skills/js.png" },
+    ],
+  },
+  {
+    title: "E-Loan",
+    about:
+      "E-Loan is a comprehensive loan management system designed for financial institutions to streamline their lending operations. It provides tools for loan application, approval workflows, and payment tracking, ensuring efficiency and accuracy at every stage. With user-friendly features and secure data handling, E-Loan helps institutions improve client experience, simplify processes, and maintain better financial oversight.",
+    image: "/Projects/E-Loan.png",
+    source: "https://github.com/marlonlongm/e-loan",
+    demo: "https://e-loan.vercel.app/",
+    technologies: [
+      { title: "Next.js", image: "/Skills/next.jpeg" },
+      { title: "React", image: "/Skills/react.png" },
+      { title: "Node.js", image: "/Skills/node.png" },
+      { title: "MongoDB", image: "/Skills/mongodb.gif" },
+      { title: "Tailwind CSS", image: "/Skills/tailwind.png" },
+      { title: "TypeScript", image: "/Skills/js.png" },
+    ],
+  },
+  {
+    title: "DMTAS",
+    about:
+      "A comprehensive solutions provider for businesses, DM-TAS delivers digital multifunction printing, document digitisation, signage, graphic design, and embedded process integration. With end-to-end services tailored for efficiency and visibility, the company empowers organizations to streamline workflows, enhance productivity, and elevate their document and media needs.  ",
+    image: "/Projects/DMtas.png",
+    source: "",
+    demo: "https://www.dmtas.com.au/",
+    technologies: [
+      { title: "Next.js", image: "/Skills/next.jpeg" },
+      { title: "React", image: "/Skills/react.png" },
+      { title: "Node.js", image: "/Skills/node.png" },
+      { title: "MongoDB", image: "/Skills/mongodb.gif" },
+      { title: "Tailwind CSS", image: "/Skills/tailwind.png" },
+      { title: "TypeScript", image: "/Skills/js.png" },
+    ],
+  },
+  {
+    title: "Talpakan",
+    about:
+      "Talpakan is a retro-style game for two players, each commanding a chicken in a fast-paced duel. Gameplay involves strategic attacks, random chance bonuses or penalties, and the first to defeat the opponent's chicken wins. This game delivers nostalgic charm with competitive mechanics, making every match both unpredictable and thrilling.",
+    image: "/Projects/talpakan.png",
+    source: "https://github.com/mgacrama211176/js-talpakan-game",
+    demo: "https://js-talpakan-game.vercel.app/",
+    technologies: [
+      { title: "html5", image: "/Skills/html5.png" },
+      { title: "css", image: "/Skills/css.png" },
+      { title: "javascript", image: "/Skills/js.png" },
+    ],
+  },
+
+  {
+    title: "Jet's Pizza Coupon App",
+    about:
+      "An internal tool for Jet's Pizza managers to create and track promotional coupons, monitor bestselling pizzas, and view shop performance via detailed statistics—all within a unified dashboard designed to streamline marketing and management.",
+    image: "/Projects/jets.png",
+    source: "",
+    demo: "https://pizza-guy.vercel.app/",
+    technologies: [
+      { title: "Next.js", image: "/Skills/next.jpeg" },
+      { title: "React", image: "/Skills/react.png" },
+      { title: "Node.js", image: "/Skills/node.png" },
       { title: "MongoDB", image: "/Skills/mongodb.gif" },
       { title: "Tailwind CSS", image: "/Skills/tailwind.png" },
       { title: "TypeScript", image: "/Skills/js.png" },
@@ -205,7 +206,7 @@ export const userExperience: Experiences[] = [
     companyName: "Project Based",
     techUsed: [
       "/Skills/react.png",
-      "/Skills/node.webp",
+      "/Skills/node.png",
       "/Skills/mongodb.gif",
       "/Skills/express.png",
       "/Skills/github.png",
@@ -223,7 +224,7 @@ export const userExperience: Experiences[] = [
     position: "Full Stack Web Developer",
     companyName: "Kreativ Kat Digital Marketing",
     techUsed: [
-      "/Skills/node.webp",
+      "/Skills/node.png",
       "/Skills/mongodb.gif",
       "/Skills/express.png",
       "/Skills/github.png",
@@ -245,7 +246,7 @@ export const userExperience: Experiences[] = [
     position: "Web Developer",
     companyName: "Staff Outsourcing Solutions",
     techUsed: [
-      "/Skills/node.webp",
+      "/Skills/node.png",
       "/Skills/mongodb.gif",
       "/Skills/express.png",
       "/Skills/github.png",
