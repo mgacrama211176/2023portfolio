@@ -2,6 +2,7 @@ import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import { BsPerson } from "react-icons/bs";
+import { SlSocialGithub } from "react-icons/sl";
 
 const Header = () => {
   return (
@@ -13,31 +14,25 @@ const Header = () => {
         animate={{ y: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1.5 }}
       >
-        <SocialIcon
-          url="https://www.facebook.com/maruronu.gakurama.3/"
-          id="facebook"
-          fgColor="#00255E"
-          bgColor="transparent"
+        <SlSocialGithub
+          href="https://www.facebook.com/maruronu.gakurama.3/"
+          color="#00255E"
         />
-        <SocialIcon
-          url="https://www.linkedin.com/in/marlongacrama/"
-          fgColor="#00255E"
-          bgColor="transparent"
+        <SlSocialGithub
+          href="https://www.linkedin.com/in/marlongacrama/"
+          color="#00255E"
         />
-        <SocialIcon
-          url="https://www.youtube.com/channel/UCmewiMiq1dSV1vlX6CGs_aQ"
-          fgColor="#00255E"
-          bgColor="transparent"
+        <SlSocialGithub
+          href="https://www.youtube.com/channel/UCmewiMiq1dSV1vlX6CGs_aQ"
+          color="#00255E"
         />
-        <SocialIcon
-          url="https://www.instagram.com/gakurama_kun02/"
-          fgColor="#00255E"
-          bgColor="transparent"
+        <SlSocialGithub
+          href="https://www.instagram.com/gakurama_kun02/"
+          color="#00255E"
         />
-        <SocialIcon
-          url="https://github.com/mgacrama211176"
-          fgColor="#00255E"
-          bgColor="transparent"
+        <SlSocialGithub
+          href="https://github.com/mgacrama211176"
+          color="#00255E"
         />
       </motion.div>
 
